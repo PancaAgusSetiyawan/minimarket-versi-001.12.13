@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EB96A32E-FFE5-4EBF-AD05-FE7F51F65DB3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>dedi.My.MyApplication</StartupObject>
+    <RootNamespace>dedi</RootNamespace>
+    <AssemblyName>dedi</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>dedi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>dedi.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="EnvDTE, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="MySql.Data, Version=6.1.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySQL.VisualStudio, Version=6.1.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\MySQL Connector Net 6.1.3\Integration\MySQL.VisualStudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Qios.DevSuite.Components, Version=4.0.0.20, Culture=neutral, PublicKeyToken=3cc53827b79c92fa, processorArchitecture=MSIL" />
+    <Reference Include="QSS.Components.Windows.Forms, Version=2.0.5.874, Culture=neutral, PublicKeyToken=ff4b97c5154224ef, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Quantum Software Solutions\Windows Forms Components\bin\QSS.Components.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="class\clsBarang.vb" />
+    <Compile Include="class\clsGolongan.vb" />
+    <Compile Include="class\clsHarga.vb" />
+    <Compile Include="class\clsJns_Brg.vb" />
+    <Compile Include="class\clsPemblian.vb" />
+    <Compile Include="class\clsPenjualan.vb" />
+    <Compile Include="class\clsSuplier.vb" />
+    <Compile Include="class\clsUser.vb" />
+    <Compile Include="Interface\AboutF.Designer.vb">
+      <DependentUpon>AboutF.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\AboutF.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmBarang.Designer.vb">
+      <DependentUpon>FrmBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmCariBarang.Designer.vb">
+      <DependentUpon>FrmCariBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmCariBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmCariPembelian.Designer.vb">
+      <DependentUpon>FrmCariPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmCariPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmCariPenjualan.Designer.vb">
+      <DependentUpon>FrmCariPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmCariPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmCariStok.Designer.vb">
+      <DependentUpon>FrmCariStok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmCariStok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmCariSuplier.Designer.vb">
+      <DependentUpon>FrmCariSuplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmCariSuplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmJenis.Designer.vb">
+      <DependentUpon>frmJenis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmJenis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Lap_FrmPembelian.Designer.vb">
+      <DependentUpon>Lap_FrmPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Lap_FrmPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Lap_FrmPenjualan.Designer.vb">
+      <DependentUpon>Lap_FrmPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Lap_FrmPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmLogIn1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmLogIn1.Designer.vb">
+      <DependentUpon>frmLogIn1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmLogIn2.Designer.vb">
+      <DependentUpon>FrmLogIn2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmLogIn2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmPembelian.Designer.vb">
+      <DependentUpon>frmPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmRubahPass.Designer.vb">
+      <DependentUpon>frmRubahPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmRubahPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmStokOpname.Designer.vb">
+      <DependentUpon>FrmStokOpname.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmStokOpname.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmSuplier.Designer.vb">
+      <DependentUpon>frmSuplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmSuplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmTopTen.Designer.vb">
+      <DependentUpon>frmTopTen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmTopTen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmTutupPos.Designer.vb">
+      <DependentUpon>FrmTutupPos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmTutupPos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmUpdateHarga.Designer.vb">
+      <DependentUpon>FrmUpdateHarga.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmUpdateHarga.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\frmUser.Designer.vb">
+      <DependentUpon>frmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\frmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\FrmGolongan.Designer.vb">
+      <DependentUpon>FrmGolongan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\FrmGolongan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Cr_LapStok.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_LapStok.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\Cr_TutupKasir.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_TutupKasir.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\Ds_Tutup_Kasir.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Tutup_Kasir.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_Pembelian.Designer.vb">
+      <DependentUpon>Lap_Pembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_Pembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Cr_Pb_Harian.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_Pb_Harian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\Ds_Pb_Harian.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Pb_Harian.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_Pb_Harian.Designer.vb">
+      <DependentUpon>Lap_Pb_Harian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_Pb_Harian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Lap_Pj_harianVw.Designer.vb">
+      <DependentUpon>Lap_Pj_harianVw.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_Pj_harianVw.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Lap_PerTransVW.Designer.vb">
+      <DependentUpon>Lap_PerTransVW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_PerTransVW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Lap_Stok.Designer.vb">
+      <DependentUpon>Lap_Stok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_Stok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Lap_Stok_OpNameVW.Designer.vb">
+      <DependentUpon>Lap_Stok_OpNameVW.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_Stok_OpNameVW.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\Cr_pembelian.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_pembelian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\Cr_PerTrans.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_PerTrans.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\Cr_Pj_Harian.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cr_Pj_Harian.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\cr_Stok.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>cr_Stok.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\Ds_pembelian.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_pembelian.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Ds_pembelian.vb">
+      <DependentUpon>Ds_pembelian.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\DS_PerTrans.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DS_PerTrans.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\DS_PerTrans.vb">
+      <DependentUpon>DS_PerTrans.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Ds_Pj_Harian.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Pj_Harian.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Ds_Pj_Harian.vb">
+      <DependentUpon>Ds_Pj_Harian.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Ds_Stok.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ds_Stok.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_TutupKasir.Designer.vb">
+      <DependentUpon>Lap_TutupKasir.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\Lap_TutupKasir.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mdlMain.vb" />
+    <Compile Include="Interface\MenuMain.Designer.vb">
+      <DependentUpon>MenuMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\MenuMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mdl_Hak_Akses.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Interface\POS.Designer.vb">
+      <DependentUpon>POS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\POS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Interface\AboutF.resx">
+      <DependentUpon>AboutF.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmBarang.resx">
+      <DependentUpon>FrmBarang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmCariBarang.resx">
+      <DependentUpon>FrmCariBarang.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmCariPembelian.resx">
+      <DependentUpon>FrmCariPembelian.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmCariPenjualan.resx">
+      <DependentUpon>FrmCariPenjualan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmCariStok.resx">
+      <DependentUpon>FrmCariStok.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmCariSuplier.resx">
+      <DependentUpon>FrmCariSuplier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmJenis.resx">
+      <DependentUpon>frmJenis.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmLogIn1.resx">
+      <DependentUpon>frmLogIn1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmLogIn2.resx">
+      <DependentUpon>FrmLogIn2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmPembelian.resx">
+      <DependentUpon>frmPembelian.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmRubahPass.resx">
+      <DependentUpon>frmRubahPass.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmStokOpname.resx">
+      <DependentUpon>FrmStokOpname.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmSuplier.resx">
+      <DependentUpon>frmSuplier.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmTopTen.resx">
+      <DependentUpon>frmTopTen.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmTutupPos.resx">
+      <DependentUpon>FrmTutupPos.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmUpdateHarga.resx">
+      <DependentUpon>FrmUpdateHarga.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\frmUser.resx">
+      <DependentUpon>frmUser.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\FrmGolongan.resx">
+      <DependentUpon>FrmGolongan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Lap_FrmPembelian.resx">
+      <DependentUpon>Lap_FrmPembelian.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Lap_FrmPenjualan.resx">
+      <DependentUpon>Lap_FrmPenjualan.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Cr_LapStok.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_LapStok.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Cr_TutupKasir.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_TutupKasir.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Lap_Pembelian.resx">
+      <DependentUpon>Lap_Pembelian.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Cr_Pb_Harian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_Pb_Harian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Lap_Pb_Harian.resx">
+      <DependentUpon>Lap_Pb_Harian.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Lap_Pj_harianVw.resx">
+      <DependentUpon>Lap_Pj_harianVw.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Lap_PerTransVW.resx">
+      <DependentUpon>Lap_PerTransVW.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Lap_Stok.resx">
+      <DependentUpon>Lap_Stok.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Lap_Stok_OpNameVW.resx">
+      <DependentUpon>Lap_Stok_OpNameVW.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\MenuMain.resx">
+      <DependentUpon>MenuMain.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Cr_pembelian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_pembelian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Cr_PerTrans.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_PerTrans.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Cr_Pj_Harian.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Cr_Pj_Harian.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\cr_Stok.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>cr_Stok.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\Lap_TutupKasir.resx">
+      <DependentUpon>Lap_TutupKasir.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interface\POS.resx">
+      <DependentUpon>POS.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSChart20Lib">
+      <Guid>{65E121D4-0C60-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSChart20Lib">
+      <Guid>{65E121D4-0C60-11D2-A9FC-0000F8754DA1}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSDATASRC">
+      <Guid>{7C0FFAB0-CD84-11D0-949A-00A0C91110ED}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Laporan\Ds_Pb_Harian.xsc">
+      <DependentUpon>Ds_Pb_Harian.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_Pb_Harian.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Pb_Harian.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Laporan\Ds_Pb_Harian.xss">
+      <DependentUpon>Ds_Pb_Harian.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_pembelian.xsc">
+      <DependentUpon>Ds_pembelian.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_pembelian.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_pembelian.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Laporan\Ds_pembelian.xss">
+      <DependentUpon>Ds_pembelian.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\DS_PerTrans.xsc">
+      <DependentUpon>DS_PerTrans.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\DS_PerTrans.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DS_PerTrans.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Laporan\DS_PerTrans.xss">
+      <DependentUpon>DS_PerTrans.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_Pj_Harian.xsc">
+      <DependentUpon>Ds_Pj_Harian.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_Pj_Harian.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Pj_Harian.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Laporan\Ds_Pj_Harian.xss">
+      <DependentUpon>Ds_Pj_Harian.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_Stok.xsc">
+      <DependentUpon>Ds_Stok.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_Stok.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Stok.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Laporan\Ds_Stok.xss">
+      <DependentUpon>Ds_Stok.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\login_icon_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speech-balloon-green-d-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Laporan\Ds_Tutup_Kasir.xsc">
+      <DependentUpon>Ds_Tutup_Kasir.xsd</DependentUpon>
+    </None>
+    <None Include="Laporan\Ds_Tutup_Kasir.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Ds_Tutup_Kasir.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Laporan\Ds_Tutup_Kasir.xss">
+      <DependentUpon>Ds_Tutup_Kasir.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\dedi.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

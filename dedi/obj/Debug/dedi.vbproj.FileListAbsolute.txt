@@ -1,0 +1,70 @@
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\bin\Debug\dedi.exe
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\bin\Debug\dedi.pdb
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\bin\Debug\dedi.xml
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.frmLogIn1.resources
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.Resources.resources
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.vbproj.GenerateResource.Cache
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.exe
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.xml
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.pdb
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.FrmBarang.resources
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.FrmLogIn2.resources
+C:\Users\asus\AppData\Local\Temporary Projects\dedi\obj\Debug\dedi.Menu.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.exe
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.xml
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.pdb
+D:\Portofolio\dedi\dedi\bin\Debug\dedi.exe
+D:\Portofolio\dedi\dedi\bin\Debug\dedi.pdb
+D:\Portofolio\dedi\dedi\bin\Debug\dedi.xml
+D:\Portofolio\dedi\dedi\bin\Debug\MySQL.VisualStudio.dll
+D:\Portofolio\dedi\dedi\obj\Debug\ResolveAssemblyReference.cache
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmBarang.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.frmJenis.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.frmLogIn1.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmLogIn2.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Resources.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.vbproj.GenerateResource.Cache
+D:\Portofolio\dedi\dedi\bin\Debug\dedi.exe.config
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.frmSuplier.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.frmPembelian.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.frmUser.resources
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.Windows.Forms.dll
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.Data.dll
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.dll
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.Windows.Forms.pdb
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.Windows.Forms.xml
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.Data.pdb
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.Data.xml
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.pdb
+D:\Portofolio\dedi\dedi\bin\Debug\QSS.Components.xml
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.POS.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.frmRubahPass.resources
+D:\Portofolio\dedi\dedi\bin\Debug\Qios.DevSuite.Components.dll
+D:\Portofolio\dedi\dedi\bin\Debug\Qios.DevSuite.Components.xml
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmCariSuplier.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmCariBarang.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmUpdateHarga.resources
+D:\Portofolio\dedi\dedi\bin\Debug\Interop.MSChart20Lib.dll
+D:\Portofolio\dedi\dedi\bin\Debug\AxInterop.MSChart20Lib.dll
+D:\Portofolio\dedi\dedi\obj\Debug\Interop.MSChart20Lib.dll
+D:\Portofolio\dedi\dedi\obj\Debug\AxInterop.MSChart20Lib.dll
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.vbproj.ResolveComReference.cache
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.frmTopTen.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.MenuMain.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmStokOpname.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmGolongan.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmTutupPos.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmCariPembelian.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmCariPenjualan.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.FrmCariStok.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_Stok_OpNameVW.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_PerTransVW.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_Pembelian.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_FrmPembelian.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_FrmPenjualan.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_Pb_Harian.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_Pj_harianVw.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_Stok.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.AboutF.resources
+D:\Portofolio\dedi\dedi\obj\Debug\dedi.Lap_TutupKasir.resources

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+dedi
+</name>
+</assembly>
+<members>
+<member name="T:dedi.Ds_Tutup_Kasir.Ds_Tutup_KasirDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dedi.Ds_Tutup_Kasir.Ds_Tutup_KasirRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dedi.Ds_Tutup_Kasir.Ds_Tutup_KasirRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dedi.Ds_Tutup_Kasir">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dedi.Ds_pembelian.ds_pembelianDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dedi.Ds_pembelian.ds_pembelianRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dedi.Ds_pembelian.ds_pembelianRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dedi.Ds_pembelian">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dedi.Ds_Pj_Harian.Ds_Pj_HarianDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dedi.Ds_Pj_Harian.Ds_Pj_HarianRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dedi.Ds_Pj_Harian.Ds_Pj_HarianRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dedi.Ds_Pj_Harian">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dedi.Ds_Stok.Ds_StokDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dedi.Ds_Stok.Ds_StokRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dedi.Ds_Stok.Ds_StokRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dedi.Ds_Stok">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dedi.Ds_Pb_Harian.Ds_Pb_HarianDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dedi.Ds_Pb_Harian.Ds_Pb_HarianRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dedi.Ds_Pb_Harian.Ds_Pb_HarianRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dedi.Ds_Pb_Harian">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:dedi.DS_PerTrans.Ds_PerTransDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:dedi.DS_PerTrans.Ds_PerTransRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:dedi.DS_PerTrans.Ds_PerTransRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:dedi.DS_PerTrans">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="P:dedi.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:dedi.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:dedi.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

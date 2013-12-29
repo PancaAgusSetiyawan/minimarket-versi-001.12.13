@@ -1,0 +1,3088 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QSS.Components.Windows.Forms</name>
+    </assembly>
+    <members>
+        <member name="T:QSS.Components.Windows.Forms.TipLabel">
+            <summary>
+            Represents a control which displays text associated with an image on a yellow background.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.TipLabel.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.TipLabel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.TipLabel"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.TipLabel.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.TipLabel.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.TipLabel.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.SetBoundsCore(System.Int32,System.Int32,System.Int32,System.Int32,System.Windows.Forms.BoundsSpecified)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.TipLabel.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.TipLabel.Text">
+            <summary>
+            Gets or sets the text displayed on the control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.TipLabel.ImageType">
+            <summary>
+            Gets or sets the type of image to display.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.TipLabel.Image">
+            <summary>
+            Gets or sets the image displayed on the control.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExternalUIHelpers">
+            <summary>
+            Provides static methods for launching external UI elements.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExternalUIHelpers.LaunchBrowser(System.String)">
+            <summary>
+            Launches the a web browser and loads the specified URL.
+            </summary>
+            <param name="url">The URL to load in the browser.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExternalUIHelpers.CreateEmail(System.String,System.String)">
+            <summary>
+            Creates a new email message addressed to the specified recipient.
+            </summary>
+            <param name="toAddress">The recipient of the email message.</param>
+            <param name="subject">The subject of the email message, or <see langword="null"/>.</param>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedListView">
+            <summary>
+            Represents an extended Windows list view control that supports sorting and data binding.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ExtendedListView"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.OnDataSourceChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.ExtendedListView.DataSourceChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.OnItemDataBound(QSS.Components.Windows.Forms.ListViewItemEventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.ExtendedListView.ItemDataBound"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.SetColumnWidths">
+            <summary>
+            Sets the column widths to automatically fit their contents.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.WmThemeChanged">
+            <summary>
+            Updates the UI when the OS theme is changed.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.ListView.OnColumnClick(System.Windows.Forms.ColumnClickEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.ListView.WndProc(System.Windows.Forms.Message@)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.OnSizeChanged(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnSizeChanged(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnEnabledChanged(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.OnBindingContextChanged(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnBindingContextChanged(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedListView.OnKeyUp(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnKeyUp(System.Windows.Forms.KeyEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.DataSource">
+            <summary>
+            Gets or sets the data source for this <see cref="T:QSS.Components.Windows.Forms.ExtendedListView"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.DataMember">
+            <summary>
+            Gets or sets the specific list in a DataSource for which the <see cref="T:QSS.Components.Windows.Forms.ExtendedListView"/> displays a grid.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.CustomSort">
+            <summary>
+            Gets or sets a value indicating whether a custom <see cref="T:System.Collections.IComparer"/> should be used for sorting.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.AutoGenerateColumns">
+            <summary>
+            Gets or sets a value indicating whether to automatically generate columns based on the data source.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.GuessDataTypes">
+            <summary>
+            Gets or sets a value indicating whether to use regular expressions to guess the data types based on the text of items.
+            This has no effect if the control is databound.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.AutoSizeColumns">
+            <summary>
+            Gets or sets a value indicating whether columns are automatically sized to fit their contents.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.Columns">
+            <summary>
+            Gets the collection of all column headers that appear in the control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.ValueMember">
+            <summary>
+            Gets or sets a string that specifies the property of the data source from which to draw the value.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.SelectedValue">
+            <summary>
+            Gets the value of the member property specified by the
+            <see cref="P:QSS.Components.Windows.Forms.ExtendedListView.SelectedValue"/> property.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.SelectedValues">
+            <summary>
+            Gets or sets the values of the member property specified by the <see cref="P:QSS.Components.Windows.Forms.ExtendedListView.ValueMember"/> property.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.SortOrder">
+            <summary>
+            Gets or sets how items in the list are sorted.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.SortColumn">
+            <summary>
+            Gets or sets the index of the column data is sorted by.
+            </summary>
+            <remarks>In order to sort data in a non-databound list as a type other than string, you must implement
+            a custom <see cref="T:System.Collections.IComparer"/> and set the
+            <see cref="P:System.Windows.Forms.ListView.ListViewItemSorter"/> property.</remarks>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedListView.EmptyText">
+            <summary>
+            Gets or sets the text displayed when the control is empty.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.ExtendedListView.DataSourceChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.ExtendedListView.DataSource"/>
+            or <see cref="P:QSS.Components.Windows.Forms.ExtendedListView.DataMember"/> property changes.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.ExtendedListView.ItemDataBound">
+            <summary>
+            Occurs when a <see cref="T:System.Windows.Forms.ListViewItem"/> has been bound.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.DesignerHelpers">
+            <summary>
+            Provides methods to assist with the Visual Studio .NET designer.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ComObjects.DSObjectPicker">
+            <summary>
+            The COM coclass for the object picker dialog box represented as a C# class.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.SelectDataRepeaterRowTemplateForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.SelectDataRepeaterRowTemplateForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.SelectDataRepeaterRowTemplateForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedDataGridView">
+            <summary>
+            Represents an extended <see cref="T:System.Windows.Forms.DataGridView"/> that fixes bugs with the standard .NET 2.0 control. This should be removed with .NET 2.0 SP1.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedDataGridView.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.DataGridView.ProcessDialogKey(System.Windows.Forms.Keys)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedDataGridView.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            This member overrides <see cref="E:System.Windows.Forms.Control.KeyDown"/>.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.TabIndexComparer">
+            <summary>
+            Exposes a method that compares two <see cref="T:System.Windows.Forms.Control"/> objects based on tab index.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.TabIndexComparer.Compare(System.Object,System.Object)">
+            <summary>
+            Compares two <see cref="T:System.Windows.Forms.Control"/> objects based on tab index, and returns a value indicating whether one is less than,
+            equal to or greater than the other.
+            </summary>
+            <param name="x">First <see cref="T:System.Windows.Forms.Control"/> to compare.</param>
+            <param name="y">Second <see cref="T:System.Windows.Forms.Control"/> to compare.</param>
+            <returns>
+            	<list type="table">
+            		<listheader>
+            			<term>Value</term>
+            			<description>Condition</description>
+            		</listheader>
+            		<item>
+            			<term>Less than zero</term>
+            			<description><paramref name="x"/> is less than <paramref name="y"/>.</description>
+             		</item>
+            		<item>
+            			<term>Zero</term>
+            			<description><paramref name="x"/> equals <paramref name="y"/>.</description>
+            		</item>
+            		<item>
+            			<term>Greater than zero</term>
+            			<description><paramref name="x"/> is greater than <paramref name="y"/>.</description>
+            		</item>
+            	</list>
+            </returns>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.GdiHelpers">
+            <summary>
+            Provides functions to assist with GDI rendering.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.GdiHelpers.Rgb(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Returns an integer value representing an RGB color value from a set of red, green and blue color components.
+            </summary>
+            <param name="red">Integer in the range 0-255, inclusive, that represents the intensity of the red component of the color.</param>
+            <param name="green">Integer in the range 0-255, inclusive, that represents the intensity of the green component of the color.</param>
+            <param name="blue">Integer in the range 0-255, inclusive, that represents the intensity of the blue component of the color.</param>
+            <returns>An integer value representing an RGB color value from a set of red, green and blue color components.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.GdiHelpers.IconToAlphaBitmap(System.Drawing.Icon)">
+            <summary>
+            Returns a bitmap with an alpha channel from the specified <see cref="T:System.Drawing.Icon"/>.
+            </summary>
+            <param name="icon">The <see cref="T:System.Drawing.Icon"/> to convert.</param>
+            <returns>A bitmap with an alpha channel from the specified <see cref="T:System.Drawing.Icon"/>.</returns>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.EditBalloonToolTip">
+            <summary>
+            Represents a popup window that displays a message associated with a Windows Forms edit control.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.BalloonToolTipBase">
+            <summary>
+            Represents the base class for a popup window that displays a message associated with a Windows Forms control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTipBase.SetToolTip(System.Windows.Forms.Control,System.String)">
+            <summary>
+            Associates the specified balloon tooltip text with the specified control and gives the control input focus.
+            </summary>
+            <param name="control">The control to associate tooltip text with.</param>
+            <param name="caption">The tooltip text to display.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTipBase.OnTitleChanged(System.EventArgs)">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.BalloonToolTipBase.Title"/> property changes.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTipBase.OnIconChanged(System.EventArgs)">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.BalloonToolTipBase.Icon"/> property changes.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTipBase.Title">
+            <summary>
+            Gets or sets the title displayed in the balloon, if any. This cannot be longer than 100 characters.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTipBase.Icon">
+            <summary>
+            Gets or sets the icon displayed in the balloon, if any. A title must be set for the icon to be displayed.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.EditBalloonToolTip.SetToolTip(System.Windows.Forms.Control,System.String)">
+            <summary>
+            Associates the specified edit balloon tooltip text with the specified control and gives the control input focus.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to associate tooltip text with.</param>
+            <param name="caption">The tooltip text to display.</param>
+            <exception cref="T:System.PlatformNotSupportedException">The platform is older than Windows XP and does not support balloon tooltips.</exception>
+            <exception cref="T:System.ArgumentNullException">The control is null.</exception>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.EditBalloonToolTip.SetToolTip(System.Windows.Forms.TextBox,System.String)">
+            <summary>
+            Associates the specified edit balloon tooltip text with the specified control and gives the control input focus.
+            </summary>
+            <param name="textBox">The <see cref="T:System.Windows.Forms.TextBox"/> to associate tooltip text with.</param>
+            <param name="caption">The tooltip text to display.</param>
+            <exception cref="T:System.PlatformNotSupportedException">The platform is older than Windows XP and does not support balloon tooltips.</exception>
+            <exception cref="T:System.ArgumentNullException">The textBox is null.</exception>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.EditBalloonToolTip.SetToolTip(System.Windows.Forms.ComboBox,System.String)">
+            <summary>
+            Associates the specified balloon tooltip text with the specified control and gives the control input focus.
+            </summary>
+            <param name="comboBox">The <see cref="T:System.Windows.Forms.ComboBox"/> to associate tooltip text with.</param>
+            <param name="caption">The tooltip text to display.</param>
+            <exception cref="T:System.PlatformNotSupportedException">The platform is older than Windows XP and does not support balloon tooltips.</exception>
+            <exception cref="T:System.ArgumentNullException">The comboBox is null.</exception>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.EditBalloonToolTip.IsSupported">
+            <summary>
+            Gets a value indicating whether the control is supported under the current platform (Windows XP and above), and whether the user
+            has disabled balloon tool tips in the registry.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.DirtyProvider">
+            <summary>
+            Keeps track control values that change.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.DirtyProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.DirtyProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.OnIsDirtyChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.DirtyProvider.IsDirtyChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> containing the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.GetEnableDirtyChecking(System.Windows.Forms.Control)">
+            <summary>
+            Retrieves a value indicating whether to check for changes in the value of the <see cref="T:System.Windows.Forms.Control"/>.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to check for changes.</param>
+            <returns>A indicating whether to check for changes in the value of the <see cref="T:System.Windows.Forms.Control"/>.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.SetEnableDirtyChecking(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Sets a value indicating whether to check for changes in the value of the <see cref="T:System.Windows.Forms.Control"/>.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to check for changes.</param>
+            <param name="checkIfDirty">Indicates whether to check for changes in the value of the
+            <see cref="T:System.Windows.Forms.Control"/>.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.GetIsDirty(System.Windows.Forms.Control)">
+            <summary>
+            Returns a value indicating whether the value of the specified <see cref="T:System.Windows.Forms.Control"/> has changed.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to check.</param>
+            <returns>A value indicating whether the value of the specified <see cref="T:System.Windows.Forms.Control"/> has changed.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.SetIsDirty(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Sets a value indicating whether the value of the specified <see cref="T:System.Windows.Forms.Control"/> has changed.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/>.</param>
+            <param name="isDirty">A value indicating whether the value of <see pref="control"/> has changed.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.BeginDirtyChecking">
+            <summary>
+            Begins checking for changes in control values.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.EndDirtyChecking">
+            <summary>
+            Ends checking for changes in control values.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.SuspendDirtyChecking">
+            <summary>
+            Suspends checking for changes in the values of all controls.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.ResumeDirtyChecking">
+            <summary>
+            Resumes checking for changes in control values.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.ResetIsDirty">
+            <summary>
+            Resets the dirty state of all controls.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DirtyProvider.CanExtend(System.Object)">
+            <summary>
+            Specifies whether this object can provide its extender properties to the specified object.
+            </summary>
+            <param name="extendee">The <see>System.Object</see> to receive the extender properties.</param>
+            <returns><see langword="true"/> if this object can provide extender properties to the specified object; otherwise,
+            <see langword="false"/>.</returns>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DirtyProvider.IsDirty">
+            <summary>
+            Gets a value indicating whether the value of any control has been modified.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DirtyProvider.EnableIndividualControlChecking">
+            <summary>
+            Gets or sets a value indicating whether to continue checking for dirty controls when a control
+            becomes dirty. Set this to <see langword="false"/> to optimize performance.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.DirtyProvider.IsDirtyChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.DirtyProvider.IsDirty"/> property changes.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.DataSourcePicker">
+            <summary>
+            Represents a Windows data source picker control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataSourcePicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.DataSourcePicker"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataSourcePicker.Connect">
+            <summary>
+            Connects to the specified data source.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataSourcePicker.Connect(System.Boolean)">
+            <summary>
+            Connects to the specified data source.
+            </summary>
+            <param name="showErrorMessage">A value indicating whether to show an error message if the connection fails.</param>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.DataSourcePicker.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataSourcePicker.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataSourcePicker.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.EnableProvider">
+            <summary>
+            Gets or sets a value indicating whether the provider combo box is enabled.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.ShowProvider">
+            <summary>
+            Gets or sets a value indicating whether the provider combo box is visible.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.ShowDatabase">
+            <summary>
+            Gets or sets a value indicating whether the database combo box and connect button are visible.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.SelectedProvider">
+            <summary>
+            Gets or sets the selected data provider.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.ConnectionString">
+            <summary>
+            Gets the connection string to the specified data source.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.OleDbMode">
+            <summary>
+            Gets or sets a value indicating whether the generated connection string should specify an OLE DB provider.
+            This has no effect unless the SQL provider is selected.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.ShowBrowse">
+            <summary>
+            Gets or sets a value indicating whether the browse button should be displayed.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.DataSource">
+            <summary>
+            Gets or sets the name of the data source.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.UserID">
+            <summary>
+            Gets or sets the user ID.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.UseIntegratedSecurity">
+            <summary>
+            Gets or sets a value indicating whether to connect using integrated security.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataSourcePicker.Database">
+            <summary>
+            Gets or sets the name of the selected database.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.DataRepeater">
+            <summary>
+            Represents a Windows control which allows a list of free-form controls to be bound to data.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeater.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.DataRepeater"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeater.ShouldSerializeBackColor">
+            <summary>
+            Returns a value indicating whether to serialize the <see cref="P:System.Windows.Forms.Control.BackColor"/> property.
+            </summary>
+            <returns>A value indicating whether to serialize the <see cref="P:System.Windows.Forms.Control.BackColor"/> property.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeater.ResetBackColor">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.ResetBackColor"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeater.OnDataSourceChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.DataRepeater.DataSourceChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeater.TemplateRow">
+            <summary>
+            Gets or sets the inherited <see cref="T:QSS.Components.Windows.Forms.DataRepeaterRow"/> control
+            to use as a template for each row.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeater.DataSource">
+            <summary>
+            Gets or sets the data source for the <see cref="T:QSS.Components.Windows.Forms.DataRepeater"/> is
+            displaying data for.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeater.DataMember">
+            <summary>
+            Gets or sets the specific list in a <see cref="P:QSS.Components.Windows.Forms.DataRepeater.DataSource"/> for which
+            the <see cref="T:QSS.Components.Windows.Forms.DataRepeater"/> is displaying data for.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeater.AutoScroll">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.ScrollableControl.AutoScroll"/>.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.DataRepeater.DataSourceChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.DataRepeater.DataSource"/> or <see cref="P:QSS.Components.Windows.Forms.DataRepeater.DataMember"/> property changes.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeater.CreateParams">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Control.CreateParams"/>.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.DataProvider">
+            <summary>
+            Represents a data provider.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.DataProvider.Sql">
+            <summary>
+            The ADO.NET SQL Server provider.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.DataProvider.Jet">
+            <summary>
+            The Jet OLE DB provider.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ComObjects.IDataObject">
+            <summary>
+            Interface to enable data transfers
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.DataRepeaterRow">
+            <summary>
+            Represents a row in a <see cref="T:QSS.Components.Windows.Forms.DataRepeater"/> control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.DataRepeaterRow.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.DataRepeaterRow"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnRowFormatBinding(QSS.Components.Windows.Forms.RowBindingEventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.DataRepeaterRow.RowFormatBinding"/> event.
+            </summary>
+            <param name="e">An <see cref="T:QSS.Components.Windows.Forms.RowBindingEventArgs"/> containing the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnRowParseBinding(QSS.Components.Windows.Forms.RowBindingEventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.DataRepeaterRow.RowParseBinding"/> event.
+            </summary>
+            <param name="e">An <see cref="T:QSS.Components.Windows.Forms.RowBindingEventArgs"/> containing the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnDefaultValuesNeeded(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.DataRepeaterRow.DefaultValuesNeeded"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnResize(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnResize(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnEnter(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnEnter(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnValidating(System.ComponentModel.CancelEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnValidating(System.ComponentModel.CancelEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnClick(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnClick(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnMouseLeave(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnMouseLeave(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.ProcessDialogKey(System.Windows.Forms.Keys)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.ContainerControl.ProcessDialogKey(System.Windows.Forms.Keys)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.OnLoad(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.UserControl.OnLoad(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.GetMappingName(System.Windows.Forms.Control)">
+            <summary>
+            Retrieves the data field mapping name associated with the specified control.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> for which to retreieve the
+            mapping name.</param>
+            <returns>The data field mapping name associated with the specified control.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.SetMappingName(System.Windows.Forms.Control,System.String)">
+            <summary>
+            Associates the specified data field mapping name with the specified control.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to associate
+            the mapping name with.</param>
+            <param name="mappingName">The data field mapping name.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.DataBind">
+            <summary>
+            Binds the controls on the <see cref="T:QSS.Components.Windows.Forms.DataRepeaterRow"/> to the data source of the <see cref="T:QSS.Components.Windows.Forms.DataRepeater"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.Edit">
+            <summary>
+            Puts the row into edit mode.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.Commit(System.Boolean)">
+            <summary>
+            Commits all changes to the data source.
+            </summary>
+            <param name="invalidateEditStatus">A value indicating whether to refresh the edit status of all rows.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.HandleCommitError(System.String,System.Windows.Forms.CurrencyManager)">
+            <summary>
+            Informs the user that the specified error occurred when attempting to commit the data, and asks the user whether they want to cancel the
+            edit or correct the value.
+            </summary>
+            <param name="errorMessage">The error that occurred.</param>
+            <param name="listManager">The <see cref="T:System.Windows.Forms.CurrencyManager"/> which generated the error.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.Abort">
+            <summary>
+            Aborts all changes made during an edit.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.Delete">
+            <summary>
+            Deletes the current row from the <see cref="T:QSS.Components.Windows.Forms.DataRepeater"/> control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.GetFirstRowError(System.Windows.Forms.CurrencyManager)">
+            <summary>
+            Returns the first error found in the data of the row, or <see langword="null"/> if none are found.
+            </summary>
+            <param name="cm">The <see cref="T:System.Windows.Forms.CurrencyManager"/> to use.</param>
+            <returns>The first error found in the data of the row, or <see langword="null"/> if none are found.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.DataRepeaterRow.CanExtend(System.Object)">
+            <summary>
+            Specifies whether this object can provide its extender properties to the specified object.
+            </summary>
+            <param name="extendee">The <see>System.Object</see> to receive the extender properties.</param>
+            <returns><see langword="true"/> if this object can provide extender properties to the specified object; otherwise,
+            <see langword="false"/>.</returns>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.DataRepeaterRow.RowFormatBinding">
+            <summary>
+            Occurs when a property of a control is bound to a data value.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.DataRepeaterRow.RowParseBinding">
+            <summary>
+            Occurs when the value of a data-bound control changes.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.DataRepeaterRow.DefaultValuesNeeded">
+            <summary>
+            Occurs when the user begins editing the row for new records, so that it can be populated with default values.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeaterRow.IsNew">
+            <summary>
+            Gets or sets a value indicating whether this is a new row.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeaterRow.CancelEditHandler">
+            <summary>
+            Gets or sets a value indicating whether to cancel edit notifications.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeaterRow.DesignMode">
+            <summary>
+            Gets a value that indicates whether the <see cref="T:QSS.Components.Windows.Forms.DataRepeaterRow"/> is currently in design mode.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeaterRow.AutoSize">
+            <summary>
+            Gets or sets a value indicating whether the control is automatically resized to fill the
+            <see cref="T:QSS.Components.Windows.Forms.DataRepeater"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeaterRow.DataItem">
+            <summary>
+            Gets the data item associated with the row.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeaterRow.Index">
+            <summary>
+            Gets or sets the index of the data item this <see cref="T:QSS.Components.Windows.Forms.DataRepeaterRow"/> is bound to.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.DataRepeaterRow.ShowDeleteButton">
+            <summary>
+            Gets or sets a value indicating whether the delete button is visible.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.SortEventArgs.ColumnIndex">
+            <summary>
+            Gets or sets the index of the column being sorted.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem">
+            <summary>
+            Represents and item in a <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBox"/> control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItem.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents the current <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> object.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/>.</returns>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBoxItem.Text">
+            <summary>
+            Gets or sets the text that is displayed for the item.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBoxItem.Font">
+            <summary>
+            Gets or sets the font of the item, if it is different from the default font of the control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBoxItem.ImageIndex">
+            <summary>
+            Gets or sets the index of the image that is displayed for the item.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBoxItem.ImageList">
+            <summary>
+            Gets the <see cref="T:System.Windows.Forms.ImageList"/> that contains the image displayed with the item.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBoxItem.Tag">
+            <summary>
+            Gets or sets the object that contains data about the item.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedComboBox">
+            <summary>
+            Represents an extended Windows combo box control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBox"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBox.OnSelectedIndexChanged(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.ComboBox.OnSelectedIndexChanged(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBox.OnHandleCreated(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.ComboBox.OnHandleCreated(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBox.OnReadOnlyChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.ExtendedComboBox.ReadOnlyChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.ComboBox.OnDrawItem(System.Windows.Forms.DrawItemEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.ExtendedComboBox.ReadOnlyChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.ExtendedComboBox.ReadOnly"/>
+            property has changed.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBox.ReadOnly">
+            <summary>
+            Gets or sets a value indicating whether the text in the combo box is read-only.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBox.ImageList">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Forms.ImageList"/> that contains the images to display next to list items.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBox.Text">
+            <summary>
+            Gets or sets the text associated with this control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBox.ExtendedComboBoxItems">
+            <summary>
+            Gets a collection containing the items contained in the <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBox"/> control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBox.DrawMode">
+            <summary>
+            Gets or sets a value indicating whether your code or the control will handle drawing of elements in the list.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBox.SelectedValue">
+            <summary>
+            Gets or sets the value of the member property specified by the <see cref="P:System.Windows.Forms.ListControl.ValueMember"/> property,
+            or the tag associated with an item.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ControlMnemonicProvider">
+            <summary>
+            Automatically applies mnemonics to a <see cref="T:System.Windows.Forms.Control"/> and all child controls.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.MnemonicProvider">
+            <summary>
+            Provides a base abstract class for objects which automatically provide mnemonics to other objects.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.MnemonicProvider.existingMnemonics">
+            <summary>
+            The existing, hard-coded mnemonics.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.MnemonicProvider.dynamicMnemonics">
+            <summary>
+            The mnemonics which have been dynamically added.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MnemonicProvider.Apply">
+            <summary>
+            Applies mnemonics to the object and all child objects.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MnemonicProvider.GetExistingMnemonics">
+            <summary>
+            Retrieves the existing, hard-coded mnemonics.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MnemonicProvider.ClearDynamicMnemonics">
+            <summary>
+            Clears all dynamically applied mnemonics from the object and all child objects.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.ControlMnemonicProvider.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ControlMnemonicProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ControlMnemonicProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.GetUseAutoMnemonics(System.Windows.Forms.Control)">
+            <summary>
+            Retrieves a value indicating whether to automatically apply mnemonics to the <see cref="T:System.Windows.Forms.Control"/> and all child controls.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to automatically apply mnemonics to.</param>
+            <returns>A value indicating whether to automatically apply mnemonics to the <see cref="T:System.Windows.Forms.Control"/> and all child controls.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.SetUseAutoMnemonics(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Automatically applies mnemonics to the specified control.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to automatically apply mnemonics to.</param>
+            <param name="useAutoMnemonics">A value indicating whether to automatically apply mnemonics to the control and all child controls.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.GetExcludeAutoMnemonics(System.Windows.Forms.Control)">
+            <summary>
+            Retrieves a value indicating whether to exclude the specified <see cref="T:System.Windows.Forms.Control"/> and all child controls from automatic mnemonics.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to exclude.</param>
+            <returns>A value indicating whether to exclude the specified <see cref="T:System.Windows.Forms.Control"/> and all child controls from automatic mnemonics.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.SetExcludeAutoMnemonics(System.Windows.Forms.Control,System.Boolean)">
+            <summary>
+            Excludes the specified <see cref="T:System.Windows.Forms.Control"/> and all child controls from automatic mnemonics.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> to exclude.</param>
+            <param name="excludeAutoMnemonics">A value indicating whether to exclude the specified <see cref="T:System.Windows.Forms.Control"/>
+            and all child controls from automatic mnemonics.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.GetExistingMnemonics">
+            <summary>
+            Retrieves the existing, hard-coded mnemonics from the <see cref="T:System.Windows.Forms.Control"/> and all child controls.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.Apply">
+            <summary>
+            Applies mnemonics to the <see cref="T:System.Windows.Forms.Control"/> and all child controls.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.ClearDynamicMnemonics">
+            <summary>
+            Clears all dynamically applied mnemonics from the <see cref="T:System.Windows.Forms.Control"/> and all child controls.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.CanExtend(System.Object)">
+            <summary>
+            Specifies whether this object can provide its extender properties to the specified object.
+            </summary>
+            <param name="extendee">The <see cref="T:System.Object"/> to receive the extender properties.</param>
+            <returns><see langword="true"/> if this object can provide extender properties to the specified object; otherwise,
+            <see langword="false"/>.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.BeginInit">
+            <summary>
+            Begins the initialization of a <see cref="T:QSS.Components.Windows.Forms.ControlMnemonicProvider"/> that is used on a
+            form or used by another component. The initialization occurs at run time.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ControlMnemonicProvider.EndInit">
+            <summary>
+            Ends the initialization of a <see cref="T:QSS.Components.Windows.Forms.ControlMnemonicProvider"/> that is used on a
+            form or used by another component. The initialization occurs at run time.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.BalloonIcon">
+            <summary>
+            Specifies constants defining which icon to display.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.BalloonIcon.None">
+            <summary>
+            The balloon contains no icon.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.BalloonIcon.Information">
+            <summary>
+            The balloon displays an icon consisting of a lowercase letter i in a circle.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.BalloonIcon.Warning">
+            <summary>
+            The balloon displays an icon consisting of an exclamation point in a triangle with a yellow background.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.BalloonIcon.Error">
+            <summary>
+            The balloon displays an icon consisting of a white X in a circle with a red background.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ActiveDirectoryObject">
+            <summary>
+            Represents an object in Active Directory.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObject.Name">
+            <summary>
+            Gets or sets the name of the object.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObject.ClassName">
+            <summary>
+            Gets or sets the name of the class of the object.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObject.Upn">
+            <summary>
+            Gets or sets the user principal name.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection">
+            <summary>
+            Represents a collection of <see cref="T:QSS.Components.Windows.Forms.ExtendedColumnHeader"/> objects.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.AddRange(QSS.Components.Windows.Forms.ExtendedColumnHeader[])">
+            <summary>
+            Adds an array of <see cref="T:QSS.Components.Windows.Forms.ExtendedColumnHeader"/> objects to the collection.
+            </summary>
+            <param name="values">An array of <see cref="T:QSS.Components.Windows.Forms.ExtendedColumnHeader"/> objects to add to the collection.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.OnInvalidate(System.EventArgs)">
+            <summary>
+            Handles the <see cref="E:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.Invalidate"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>
+            Invalides the collection after removing an element from the <see cref="T:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection"/>.
+            </summary>
+            <param name="index">The zero-based index at which the value can be found.</param>
+            <param name="value">The value of the element to remove from index.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            Invalides the collection after inserting a new element into the <see cref="T:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection"/>.
+            </summary>
+            <param name="index">The zero-based index at which the value can be found.</param>
+            <param name="value">The value of the element to insert at index.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.OnSetComplete(System.Int32,System.Object,System.Object)">
+            <summary>
+            Invalidates the collection after setting a value in the <see cref="T:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection"/>.
+            </summary>
+            <param name="index">The zero-based index at which the value can be found.</param>
+            <param name="oldValue">The value to replace with <see paramref="newValue"/>.</param>
+            <param name="newValue">The new value of the element at index.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.OnClearComplete">
+            <summary>
+            Invalidates the collection after clearing the <see cref="T:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection"/>.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.ExtendedColumnHeaderCollection.Invalidate">
+            <summary>
+            Occurs when the collection is modified.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.VerticalAlign">
+            <summary>
+            Specifies the vertical alignment of an object or text in a control.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ColorPicker">
+            <summary>
+            Represents a Windows color picker control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.ColorPicker.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ColorPicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ColorPicker"/> control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ColorPicker.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ColorPicker.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ColorPicker.SelectedColor">
+            <summary>
+            Gets or sets the selected color.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ColorPicker.DropDownStyle">
+            <summary>
+            Gets or sets a value specifying the style of the combo box.
+            </summary>
+            <exception cref="T:System.ComponentModel.InvalidEnumArgumentException">The assigned value is not one of the
+            <see cref="T:System.Windows.Forms.ComboBoxStyle"/> values.</exception>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ColorPicker.SelectedValue">
+            <summary>
+            Gets or sets the value of the member property specified by the <see cref="P:System.Windows.Forms.ListControl.ValueMember"/> property,
+            or the tag associated with an item.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ColorPicker.SelectedItem">
+            <summary>
+            Gets or sets currently selected item in the <see cref="T:System.Windows.Forms.ComboBox"/>.  
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ColorPicker.SelectedIndex">
+            <summary>
+            Gets or sets the index specifying the currently selected item.
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">The specified index is less than or equal to -2.  -or-
+            The specified index is greater than or equal to the number of items in the combo box.</exception>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ColorPicker.SelectedText">
+            <summary>
+             Gets or sets the text that is selected in the editable portion of a <see cref="T:System.Windows.Forms.ComboBox"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ColorPicker.Text">
+            <summary>
+            Gets or sets the text associated with this control.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.MenuMnemonicProvider">
+            <summary>
+            Automatically applies mnemonics to a <see cref="T:System.Windows.Forms.Menu"/> and all child menu items.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.MenuMnemonicProvider.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.MenuMnemonicProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.MenuMnemonicProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.GetUseAutoMnemonics(System.Windows.Forms.Menu)">
+            <summary>
+            Retrieves a value indicating whether to automatically apply mnemonics to the <see cref="T:System.Windows.Forms.Menu"/> and all child menu items.
+            </summary>
+            <param name="menu">The <see cref="T:System.Windows.Forms.Menu"/> to automatically apply mnemonics to.</param>
+            <returns>A value indicating whether to automatically apply mnemonics to the menu and all child menu items.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.SetUseAutoMnemonics(System.Windows.Forms.Menu,System.Boolean)">
+            <summary>
+            Automatically applies mnemonics to the specified <see cref="T:System.Windows.Forms.Menu"/> and all child menu items.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Menu"/> to automatically apply mnemonics to.</param>
+            <param name="useAutoMnemonics">A value indicating whether to automatically apply mnemonics to the <see cref="T:System.Windows.Forms.Menu"/>
+            and all child menu items.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.GetExistingMnemonics">
+            <summary>
+            Retrieves the existing, hard-coded mnemonics from the <see cref="T:System.Windows.Forms.Menu"/> and all child menu items.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.Apply">
+            <summary>
+            Applies mnemonics to the <see cref="T:System.Windows.Forms.Menu"/> and all child menu items.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.ClearDynamicMnemonics">
+            <summary>
+            Clears all dynamically applied mnemonics from the <see cref="T:System.Windows.Forms.Menu"/> and all child menu items.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.CanExtend(System.Object)">
+            <summary>
+            Specifies whether this object can provide its extender properties to the specified object.
+            </summary>
+            <param name="extendee">The <see cref="T:System.Object"/> to receive the extender properties.</param>
+            <returns><see langword="true"/> if this object can provide extender properties to the specified object; otherwise,
+            <see langword="false"/>.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.BeginInit">
+            <summary>
+            Begins the initialization of a <see cref="T:QSS.Components.Windows.Forms.MenuMnemonicProvider"/> that is used on a
+            form or used by another component. The initialization occurs at run time.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.MenuMnemonicProvider.EndInit">
+            <summary>
+            Ends the initialization of a <see cref="T:QSS.Components.Windows.Forms.MenuMnemonicProvider"/> that is used on a
+            form or used by another component. The initialization occurs at run time.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.Line">
+            <summary>
+            Represents a Windows forms line control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.Line.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.Line.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.Line"/> control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.Line.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.Line.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.Line.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Overrides <see cref="M:System.Windows.Forms.Control.OnPaintBackground(System.Windows.Forms.PaintEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.Line.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Overrides <see cref="M:System.Windows.Forms.Control.OnPaint(System.Windows.Forms.PaintEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.Line.LineWidth">
+            <summary>
+            Gets or sets the width of the line.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.Line.Flip">
+            <summary>
+            Gets or sets a value indicating whether to flip the line.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.Line.Draw3D">
+            <summary>
+            Gets or sets a value indicating whether the line should be drawn in 3D.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.Line.Text">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Control.Text"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.Line.BackColor">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Control.BackColor"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.Line.TabIndex">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Control.TabIndex"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.Line.CreateParams">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Control.CreateParams"/>.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedColumnHeader">
+            <summary>
+            Displays a single column header in a <see cref="T:QSS.Components.Windows.Forms.ExtendedListView"/> control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedColumnHeader.MappingName">
+            <summary>
+            Gets or sets the name used to map the column to a data member.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedColumnHeader.DataSource">
+            <summary>
+            Gets the data source of the <see cref="T:QSS.Components.Windows.Forms.ExtendedListView"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedColumnHeader.Format">
+            <summary>
+            Gets or sets the character(s) that specify how text is formatted.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ListViewItemEventArgs">
+            <summary>
+            Provides data for the <see cref="E:QSS.Components.Windows.Forms.ExtendedListView.ItemDataBound"/> event.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ListViewItemEventArgs.ListViewItem">
+            <summary>
+            Gets the <see cref="P:QSS.Components.Windows.Forms.ListViewItemEventArgs.ListViewItem"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ListViewItemEventArgs.DataItem">
+            <summary>
+            Gets the data item associated with this <see cref="P:QSS.Components.Windows.Forms.ListViewItemEventArgs.ListViewItem"/>.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog">
+            <summary>
+            Provides a managed wrapper for the Active Directory object picker dialog.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.components">
+            <summary>
+            Required variable for designer support.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.ShowDialog(System.Windows.Forms.IWin32Window)">
+            <summary>
+            Runs the dialog box with the specified owner.
+            </summary>
+            <param name="owner">The top-level window that will own the modal dialog box.</param>
+            <returns><see cref="F:System.Windows.Forms.DialogResult.OK"/> if the user clicks OK in the dialog box; otherwise, <see cref="F:System.Windows.Forms.DialogResult.Cancel"/>.</returns>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.MultiSelect">
+            <summary>
+            Gets or sets a value indicating whether to allow multiple objects to be selected.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.SelectedObjects">
+            <summary>
+            Gets a collection containing the selected <see cref="T:QSS.Components.Windows.Forms.ActiveDirectoryObject"/> objects.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.AdvancedView">
+            <summary>
+            Gets or sets a value indicating whether to show objects marked as advanced view only.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.SearchLocalComputer">
+            <summary>
+            Gets or sets a value indicating whether to search the local computer. If this is set
+            to <see langword="true"/>, computer objects cannot be displayed.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.SearchCurrentDomain">
+            <summary>
+            Gets or sets a value indicating whether to search the current domain.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.SearchEntireGlobalCatalog">
+            <summary>
+            Gets or sets a value indicating whether to search the entire global catalog.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.ShowUsers">
+            <summary>
+            Gets or sets a value indicating whether to show users.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.ShowGroups">
+            <summary>
+            Gets or sets a value indicating whether to show groups.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.ShowComputers">
+            <summary>
+            Gets or sets a value indicating whether to show computers.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ActiveDirectoryObjectPickerDialog.ShowBuiltInSecurityPrincipals">
+            <summary>
+            Gets or sets a value indicating whether to show built-in security principals.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ResourceCache">
+            <summary>
+            Provides a cache of resource objects to enhance performance.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ComObjects.IDsObjectPicker">
+            <summary>
+            The IDsObjectPicker interface is used by an application to initialize and display an object picker dialog box. 
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection">
+            <summary>
+            Represents a collection of <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> objects.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.#ctor(QSS.Components.Windows.Forms.ExtendedComboBox)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection"/> class.
+            </summary>
+            <param name="extendedComboBox">The <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBox"/> to parent
+            the items.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.AddRange(QSS.Components.Windows.Forms.ExtendedComboBoxItem[])">
+            <summary>
+            Adds an array of <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> objects to the list of items for a
+            <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBox"/>.
+            </summary>
+            <param name="extendedComboBoxItems">An array of <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/>
+            objects to add to the list.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.ToArray">
+            <summary>
+            Copies the elements of the <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection"/>
+            to a new <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> array.
+            </summary>
+            <returns>An <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> array containing copies of the elements
+            of the <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection"/>.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.OnInvalidate(System.EventArgs)">
+            <summary>
+            Handles the <see cref="E:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.Invalidate"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.OnRemoveComplete(System.Int32,System.Object)">
+            <summary>
+            This member overrides <see cref="M:System.Collections.CollectionBase.OnRemoveComplete(System.Int32,System.Object)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.OnInsertComplete(System.Int32,System.Object)">
+            <summary>
+            This member overrides <see cref="M:System.Collections.CollectionBase.OnInsertComplete(System.Int32,System.Object)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.OnSetComplete(System.Int32,System.Object,System.Object)">
+            <summary>
+            This member overrides <see cref="M:System.Collections.CollectionBase.OnSetComplete(System.Int32,System.Object,System.Object)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.OnClearComplete">
+            <summary>
+            This member overrides <see cref="M:System.Collections.CollectionBase.OnClearComplete"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.Add(QSS.Components.Windows.Forms.ExtendedComboBoxItem)">
+            <summary>
+            Adds the specified <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> to the collection.
+            </summary>
+            <param name="value">The <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> to be added to the collection.</param>
+            <returns>The index of the newly inserted element.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the entire collection to a compatible one-dimensional Array, starting at the specified index of the target array.
+            </summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"/> that is the destination of the elements copied from the collection. The Array
+            must have zero-based indexing.</param>
+            <param name="index">The zero-based index in <paramref name="array"/> at which copying begins.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.CopyTo(QSS.Components.Windows.Forms.ExtendedComboBoxItem[],System.Int32)">
+            <summary>
+            Copies the entire collection to a compatible one-dimensional Array, starting at the specified index of the target array.
+            </summary>
+            <param name="array">The one-dimensional <see cref="T:System.Array"/> that is the destination of the elements copied from the collection. The Array
+            must have zero-based indexing.</param>
+            <param name="index">The zero-based index in <paramref name="array"/> at which copying begins.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.Remove(QSS.Components.Windows.Forms.ExtendedComboBoxItem)">
+            <summary>
+            Removes the specified <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> from the collection.
+            </summary>
+            <param name="value">The <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> to be removed from the collection.</param>.
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.IndexOf(QSS.Components.Windows.Forms.ExtendedComboBoxItem)">
+            <summary>
+            Searches for the specified <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> and returns the zero-based index of the
+            first occurrence within the section of the collection that extends from the specified index to the last element.
+            </summary>
+            <param name="value">The <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> to locate within the collection.</param>
+            <returns>The zero-based index of the first occurrence of the <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> within the
+            section of the collection that extends from startIndex to the last element, if found; otherwise, -1.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.Insert(System.Int32,QSS.Components.Windows.Forms.ExtendedComboBoxItem)">
+            <summary>
+            Adds the specified <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> to the collection at the specified index.
+            </summary>
+            <param name="index">The index to use when inserting the <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/>.</param>
+            <param name="value">The <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> to be added to the collection.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.Contains(QSS.Components.Windows.Forms.ExtendedComboBoxItem)">
+            <summary>
+            Indicates whether the specified <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> is contained within the collection.
+            </summary>
+            <param name="value">The <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> to locate within the collection.</param>
+            <returns>Indicates whether the specified <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/> is contained within the
+            collection.</returns>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.Invalidate">
+            <summary>
+            Occurs when the collection is modified.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedComboBoxItemCollection.Item(System.Int32)">
+            <summary>
+            Returns the specified <see cref="T:QSS.Components.Windows.Forms.ExtendedComboBoxItem"/>.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedDateTimePicker">
+            <summary>
+            Represents an extended Windows date/time picker control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedDateTimePicker.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ExtendedDateTimePicker"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedDateTimePicker.OnCheckedChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.ExtendedDateTimePicker.CheckedChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedDateTimePicker.WndProc(System.Windows.Forms.Message@)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.DateTimePicker.WndProc(System.Windows.Forms.Message@)"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedDateTimePicker.DBValue">
+            <summary>
+            Gets or sets the nullable date/time value assigned to the control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedDateTimePicker.NullableValue">
+            <summary>
+            Gets or sets the nullable date/time value assigned to the control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedDateTimePicker.Format">
+            <summary>
+            Gets or sets the format of the date and time displayed in the control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedDateTimePicker.CustomFormat">
+            <summary>
+            Gets or sets the custom date/time format string.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedDateTimePicker.Checked">
+            <summary>
+            Gets or sets a value indicating whether the <see cref="P:System.Windows.Forms.DateTimePicker.Value"/> property has
+            been set with a valid date/time value and the value is visible.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedDateTimePicker.Value">
+            <summary>
+            Gets or sets the date/time value assigned to the control.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.ExtendedDateTimePicker.CheckedChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.ExtendedDateTimePicker.Checked"/> property changes.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.NativeMethods">
+            <summary>
+            Provides access to unsafe native methods.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.EM_SHOWBALLOONTIP">
+            <summary>
+            Displays a balloon tip associated with an edit control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.EM_SETMARGINS">
+            <summary>
+            Sets the widths of the left and right margins for an edit control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.EM_SETREADONLY">
+            <summary>
+            Sets or removes the read-only style of an edit control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.EC_LEFTMARGIN">
+            <summary>
+            Sets the left margin.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.LVM_GETHEADER">
+            <summary>
+            Retrieves the handle to the header control used by the list-view control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.LVM_DELETEALLITEMS">
+            <summary>
+            Removes all items from a list view control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDI_IMAGE">
+            <summary>
+            Display an image from an image list.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDI_FORMAT">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.HDITEM.fmt"/> member is valid.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDM_SETITEM">
+            <summary>
+            Sets the attributes of the specified item in a header control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDM_SETIMAGELIST">
+            <summary>
+            Assigns an image list to an existing header control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_LEFT">
+            <summary>
+            The item's contents are left-aligned.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_RIGHT">
+            <summary>
+            The item's contents are right-aligned.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_CENTER">
+            <summary>
+            The item's contents are centered.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_SORTDOWN">
+            <summary>
+            Draws a down-arrow on this item.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_SORTUP">
+            <summary>
+            Draws an up-arrow on this item.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_IMAGE">
+            <summary>
+            Display an image from an image list.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_BITMAP_ON_RIGHT">
+            <summary>
+            The bitmap appears to the right of text.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.HDF_STRING">
+            <summary>
+            The item displays a string.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_TOP">
+            <summary>
+            Justifieds text to the top of the display recangle. You must combine this value with <see cref="F:QSS.Components.Windows.Forms.NativeMethods.DT_SINGLELINE"/>.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_LEFT">
+            <summary>
+            Left aligns text in the display rectangle.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_CENTER">
+            <summary>
+            Centers text horizontally in the display rectangle.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_RIGHT">
+            <summary>
+            Right aligns text in the display rectangle.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_VCENTER">
+            <summary>
+            Centers text vertically in the display rectangle.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_BOTTOM">
+            <summary>
+            Justifies the text to the bottom of the display rectangle. You must combine this value with <see cref="F:QSS.Components.Windows.Forms.NativeMethods.DT_SINGLELINE"/>.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_WORDBREAK">
+            <summary>
+            Breaks words. Lines are automatically broken between words if a word would extend past the edge of the rectangle.
+            A carriage return-line feed sequence also breaks the line. If this is not specified, output is on one line.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_SINGLELINE">
+            <summary>
+            Displays text on a single line only. Carriage returns and linefeeds do not break the line.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_EXPANDTABS">
+            <summary>
+            Expands tab characters. The default number of characters per tab is eight. The DT_WORD_ELLIPSIS,
+            DT_PATH_ELLIPSIS, and DT_END_ELLIPSIS&gt; values cannot be used with the
+            <see cref="F:QSS.Components.Windows.Forms.NativeMethods.DT_EXPANDTABS"/> value.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_NOCLIP">
+            <summary>
+            Draws without clipping. <see cref="M:QSS.Components.Windows.Forms.NativeMethods.DrawText(System.Runtime.InteropServices.HandleRef,System.String,System.Int32,QSS.Components.Windows.Forms.RECT@,System.UInt32)"/> is somewhat faster when <see cref="F:QSS.Components.Windows.Forms.NativeMethods.DT_NOCLIP"/> is used.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_CALCRECT">
+            <summary>
+            Determines the width and height of the rectangle but does not draw the text.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_RTLREADING">
+            <summary>
+            Layout in right-to-left reading order for bi-directional text when the font selected into the hdc is a Hebrew or Arabic font.
+            The default reading order for all text is left-to-right.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.DT_HIDEPREFIX">
+            <summary>
+            Turns off processing of prefix characters.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.TABP_BODY">
+            <summary>
+            The body of a tab page.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.TCM_SETIMAGELIST">
+            <summary>
+            Assigns an image list to a tab control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.BP_PUSHBUTTON">
+            <summary>
+            Represents a push button.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.BP_CHECKBOX">
+            <summary>
+            A check box.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.BP_GROUPBOX">
+            <summary>
+            A group box.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.PBS_NORMAL">
+            <summary>
+            The normal state of a push button.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.PBS_HOT">
+            <summary>
+            The hot state of a push button.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.PBS_PRESSED">
+            <summary>
+            The pressed state of a push button.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.PBS_DISABLED">
+            <summary>
+            The disabled state of a push button.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.PBS_DEFAULTED">
+            <summary>
+            The defaulted state of a push button.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.GBS_NORMAL">
+            <summary>
+            The normal state of a group box.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.GBS_DISABLED">
+            <summary>
+            The disabled state of a group box.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.TRANSPARENT">
+            <summary>
+            Background remains untouched.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.MB_SIMPLE">
+            <summary>
+            Simple beep. If the sound card is not available, the sound is generated using the speaker.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.NIM_ADD">
+            <summary>
+            Adds an icon to the status area.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.NIM_MODIFY">
+            <summary>
+            Modifies an icon in the status area.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.NIF_MESSAGE">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NOTIFYICONDATA.uCallbackMessage"/> member is valid.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.NIM_DELETE">
+            <summary>
+            Deletes an icon from the status area.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.NIF_ICON">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NOTIFYICONDATA.hIcon"/> member is valid.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.NIF_TIP">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NOTIFYICONDATA.szTip"/> member is valid.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.NIF_INFO">
+            <summary>
+            Use a balloon ToolTip instead of a standard ToolTip. The <see cref="F:QSS.Components.Windows.Forms.NOTIFYICONDATA.szInfo"/>,
+            <see cref="F:QSS.Components.Windows.Forms.NOTIFYICONDATA.uTimeoutOrVersion"/>,
+            <see cref="F:QSS.Components.Windows.Forms.NOTIFYICONDATA.szInfoTitle"/>, and 
+            <see cref="F:QSS.Components.Windows.Forms.NOTIFYICONDATA.dwInfoFlags"/> members are valid.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_KEYUP">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_KEYUP"/> message is posted to the window with the keyboard focus when a nonsystem key is released.
+            A nonsystem key is a key that is pressed when the ALT key is not pressed, or a keyboard key that is pressed when a window
+            has the keyboard focus.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_LBUTTONDOWN">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_LBUTTONDOWN"/> message is posted when the user presses the left mouse button while the cursor is
+            in the client area of a window.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_LBUTTONUP">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_LBUTTONUP"/> message is posted when the user releases the left mouse button while the cursor is
+            in the client area of a window.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_PAINT">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_PAINT"/> message is sent when the system or another application makes a request to paint a
+            portion of an application's window.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_ENABLE">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_ENABLE"/> message is sent when an application changes the enabled state of a window.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_ERASEBKGND">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_ERASEBKGND"/> message is sent when the window background must be erased (for example, when
+            a window is resized). The message is sent to prepare an invalidated portion of a window for painting
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_THEMECHANGED">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_THEMECHANGED"/> message is broadcast to every window following a theme change event.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NativeMethods.WM_USER">
+            <summary>
+            The <see cref="F:QSS.Components.Windows.Forms.NativeMethods.WM_USER"/> constant is used by applications to help define private messages for use by private window classes,
+            usually of the form WM_USER+X, where X is an integer value.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.DllGetVersion(QSS.Components.Windows.Forms.DLLVERSIONINFO@)">
+            <summary>
+            Obtains DLL-specific version information.
+            </summary>
+            <param name="pdvi">A pointer to a <see cref="T:QSS.Components.Windows.Forms.DLLVERSIONINFO"/> structure that receives the
+            version information. The <see cref="F:QSS.Components.Windows.Forms.DLLVERSIONINFO.cbSize"/> member must be set to the size
+            of the structure before calling this function.</param>
+            <returns>A value indicating whether the function succeeded.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SelectObject(System.Runtime.InteropServices.HandleRef,System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Selects an object into the specified device context (DC). The new object replaces the previous object of the same type.
+            </summary>
+            <param name="hdc">Handle to the DC.</param>
+            <param name="hgdiobj">Handle to the object to be selected.</param>
+            <returns>If the selected object is not a region and the function succeeds, the return value is a handle to the object being replaced.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.DeleteObject(System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Deletes a logical pen, brush, font, bitmap, region, or palette, freeing all system resources associated with the object.
+            After the object is deleted, the specified handle is no longer valid.
+            </summary>
+            <param name="hObject">Handle to a logical pen, brush, font, bitmap, region, or palette.</param>
+            <returns>If the function succeeds, the return value is nonzero. If the specified handle is not valid or is currently
+            selected into a DC, the return value is zero.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SetBkMode(System.Runtime.InteropServices.HandleRef,System.Int32)">
+            <summary>
+            Sets the background mix mode of the specified device context. The background mix mode is used with text, hatched brushes,
+            and pen styles that are not solid lines.
+            </summary>
+            <param name="hdc">Handle to the device context.</param>
+            <param name="nBkMode">Specifies the background mode. This parameter can either OPAQUE or TRANSPARENT.</param>
+            <returns>The previous background mode if the function succeeds, otherwise zero.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.GetTextExtentPoint32(System.Runtime.InteropServices.HandleRef,System.String,System.Int32,System.Drawing.Size@)">
+            <summary>
+            Computes the width and height of the specified string of text.
+            </summary>
+            <param name="hdc">Handle to the device context.</param>
+            <param name="lpString">A buffer that specifies the text string. The string does not need to be zero-terminated,
+            because the cbString parameter specifies the length of the string.</param>
+            <param name="cbString">Specifies the length of the <paramref name="lpString"/> buffer.</param>
+            <param name="lpSize">Pointer to a <see cref="T:System.Drawing.Size"/> structure that receives the dimensions of the
+            string, in logical units.</param>
+            <returns></returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.ExcludeClipRect(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Creates a new clipping region that consists of the existing clipping region minus the specified rectangle.
+            </summary>
+            <param name="hdc">Handle to the device context.</param>
+            <param name="nLeftRect">Specifies the x-coordinate, in logical units, of the upper-left corner of the rectangle.</param>
+            <param name="nTopRect">Specifies the y-coordinate, in logical units, of the upper-left corner of the rectangle.</param>
+            <param name="nRightRect">Specifies the x-coordinate, in logical units, of the lower-right corner of the rectangle.</param>
+            <param name="nBottomRect">Specifies the y-coordinate, in logical units, of the lower-right corner of the rectangle.</param>
+            <returns>The return value specifies the new clipping region's complexity; it can be one of the following values.
+               <list type="table">
+                  <listheader>
+                     <term>Value</term>
+                     <description>Meaning</description>
+                  </listheader>
+                  <item>
+                     <term>NULLREGION</term>
+                     <description>Region is empty.</description>
+                  </item>
+                  <item>
+                     <term>SIMPLEREGION</term>
+                     <description>Region is a single rectangle.</description>
+                  </item>
+                  <item>
+                     <term>COMPLEXREGION</term>
+                     <description>Region is more than one rectangle.</description>
+                  </item>
+                  <item>
+                     <term>ERROR</term>
+                     <description>No region was created.</description>
+                  </item>
+               </list>
+            </returns>
+            <remarks>The lower and right edges of the specified rectangle are not excluded from the clipping region.</remarks>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.Shell_NotifyIcon(System.Int32,QSS.Components.Windows.Forms.NOTIFYICONDATA@)">
+            <summary>
+            Sends a message to the taskbar's status area.
+            </summary>
+            <param name="dwMessage">The action to be taken.</param>
+            <param name="lpdata">A pointer to a <see cref="T:QSS.Components.Windows.Forms.NOTIFYICONDATA"/> structure. The contents of
+            the structure depends on the value of <paramref name="dwMessage"/>.</param>
+            <returns>A value indicating whether the function succeeded.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.GetComboBoxInfo(System.Runtime.InteropServices.HandleRef,QSS.Components.Windows.Forms.COMBOBOXINFO@)">
+            <summary>
+            Retrieves information about the specified combo box.
+            </summary>
+            <param name="hWndCombo">The handle to the combo box.</param>
+            <param name="pcbi">A pointer to a <see cref="T:QSS.Components.Windows.Forms.COMBOBOXINFO"/> structure that receives the
+            information. The <see cref="F:QSS.Components.Windows.Forms.COMBOBOXINFO.cbSize"/> member must be set to the size of the structure
+            before calling this function.</param>
+            <returns>A value indicating whether the function succeeded.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.GetCursorPos(QSS.Components.Windows.Forms.POINT@)">
+            <summary>
+            Retrieves the cursor's position, in screen coordinates.
+            </summary>
+            <param name="lpPoint">Pointer to a <see cref="T:QSS.Components.Windows.Forms.POINT"/> structure that receives the screen
+            coordinates of the cursor.</param>
+            <returns>A value indicating whether the function succeeded.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.GetWindowText(System.Runtime.InteropServices.HandleRef,System.Text.StringBuilder,System.Int32)">
+            <summary>
+            Copies the text of the specified window's title bar (if it has one) into a buffer. If the specified window is a control, the text of the control is
+            copied. However, <see cref="M:QSS.Components.Windows.Forms.NativeMethods.GetWindowText(System.Runtime.InteropServices.HandleRef,System.Text.StringBuilder,System.Int32)"/> cannot retrieve the text of a control
+            in another application.
+            </summary>
+            <param name="hWnd">Handle to the window or control containing the text.</param>
+            <param name="lpString">The buffer that will receive the text. If the string is as long or longer than the buffer, the string is truncated and
+            terminated with a NULL character.</param>
+            <param name="nMaxCount">Specifies the maximum number of characters to copy to the buffer, including the NULL character. If the text
+            exceeds this limit, it is truncated.</param>
+            <returns>The length, in characters, of the copied string, not including the terminating NULL character.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.MessageBeep(System.UInt32)">
+            <summary>
+            Plays the specified waveform sound identified by an entry in the registry.
+            </summary>
+            <param name="uType">The sound type, as identified by an entry in the registry.</param>
+            <returns>A value indicating whether the function succeeded.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,QSS.Components.Windows.Forms.EDITBALLOONTIP@)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.String)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,QSS.Components.Windows.Forms.TOOLINFO@)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Boolean,QSS.Components.Windows.Forms.TOOLINFO@)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Boolean,System.Int32)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.IntPtr)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Boolean,System.IntPtr)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.EnableWindow(System.Runtime.InteropServices.HandleRef,System.Boolean)">
+            <summary>
+            Enables or disables mouse and keyboard input to the specified window or control. When input is disabled,
+            the window does not receive input such as mouse clicks and key presses. When input is enabled, the window receives all input.
+            </summary>
+            <param name="hWnd">Handle to the window to be enabled or disabled.</param>
+            <param name="bEnable">Specifies whether to enable or disable the window.</param>
+            <returns>If the window was previously disabled, the return value is nonzero.
+            If the window was not previously disabled, the return value is zero.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,QSS.Components.Windows.Forms.HDITEM@)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SendMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Sends the specified message to a window or windows. It calls the window procedure for the specified window and does not return until
+            the window procedure has processed the message.
+            </summary>
+            <param name="hWnd">Handle to the window whose window procedure will receive the message.</param>
+            <param name="msg">Specifies the message to be sent.</param>
+            <param name="wParam">Specifies additional message-specific information.</param>
+            <param name="lParam">Specifies additional message-specific information.</param>
+            <returns>The result of the message processing; it depends on the message sent.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.SetForegroundWindow(System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Puts the thread that created the specified window into the foreground and activates the window. Keyboard input is directed to the window,
+            and various visual cues are changed for the user. The system assigns a slightly higher priority to the thread that created the foreground
+            window than it does to other threads. 
+            </summary>
+            <param name="hWnd">The handle to the window that should be activated and brought to the foreground.</param>
+            <returns>A value indicating whether the window was brought to the foreground.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.TrackPopupMenuEx(System.Runtime.InteropServices.HandleRef,System.UInt32,System.Int32,System.Int32,System.Runtime.InteropServices.HandleRef,System.IntPtr)">
+            <summary>
+            Displays a shortcut menu at the specified location and tracks the selection of items on the shortcut menu.
+            The shortcut menu can appear anywhere on the screen.
+            </summary>
+            <param name="hmenu">The handle to the shortcut menu to be displayed.</param>
+            <param name="fuFlags">Specifies function options. </param>
+            <param name="x">Horizontal location of the shortcut menu, in screen coordinates.</param>
+            <param name="y">Vertical location of the shortcut menu, in screen coordinates.</param>
+            <param name="hwnd">Handle to the window that owns the shortcut menu.</param>
+            <param name="ignore">A TPMPARAMS object that specifies an area of the screen the menu should not overlap.</param>
+            <returns>The menu-item identifier of the item that the user selected.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.PostMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Places (posts) a message in the message queue associated with the thread that created the specified window and returns without
+            waiting for the thread to process the message.
+            </summary>
+            <param name="hwnd">Handle to the window whose window procedure is to receive the message.</param>
+            <param name="msg">Specifies the message to be posted.</param>
+            <param name="wparam">Specifies additional message-specific information.</param>
+            <param name="lparam">Specifies additional message-specific information.</param>
+            <returns>A value indicating whether the function succeeded.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.PostMessage(System.Runtime.InteropServices.HandleRef,System.Int32,System.IntPtr,System.IntPtr)">
+            <summary>
+            Places (posts) a message in the message queue associated with the thread that created the specified window and returns without
+            waiting for the thread to process the message.
+            </summary>
+            <param name="hwnd">Handle to the window whose window procedure is to receive the message.</param>
+            <param name="msg">Specifies the message to be posted.</param>
+            <param name="wparam">Specifies additional message-specific information.</param>
+            <param name="lparam">Specifies additional message-specific information.</param>
+            <returns>A value indicating whether the function succeeded.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.RegisterWindowMessage(System.String)">
+            <summary>
+            Defines a new window message that is guaranteed to be unique throughout the system.
+            The message value can be used when sending or posting messages.
+            </summary>
+            <param name="lpString">A null-terminated string that specifies the message to be registered.</param>
+            <returns>If the message is successfully registered, the return value is a message identifier in the range 0xC000 through 0xFFFF.
+            If the function fails, the return value is zero.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.DrawText(System.Runtime.InteropServices.HandleRef,System.String,System.Int32,QSS.Components.Windows.Forms.RECT@,System.UInt32)">
+            <summary>
+            Draws formatted text in the specified rectangle. It formats the text according to the specified method (expanding tabs,
+            justifying characters, breaking lines, and so forth).
+            </summary>
+            <param name="hdc">Handle to the device context.</param>
+            <param name="lpString">Pointer to the string that specifies the text to be drawn. If the nCount parameter is 1, the string
+            must be null-terminated.</param>
+            <param name="nCount">Specifies the length of the string.</param>
+            <param name="lpRect">Pointer to a <see cref="T:System.Drawing.Rectangle"/> structure that contains the rectangle (in logical coordinates).
+            in which the text is to be formatted.</param>
+            <param name="uFormat">Specifies the method of formatting the text.</param>
+            <returns>The height of the text in logical units if the function succeeds, otherwise zero.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.IsThemeActive">
+            <summary>
+            Tests if a visual style for the current application is active.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.IsAppThemed">
+            <summary>
+            Tests if a visual style for the current application is active.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.OpenThemeData(System.Runtime.InteropServices.HandleRef,System.String)">
+            <summary>
+            Opens the theme data for a window and its associated class.
+            </summary>
+            <param name="hWnd">Handle of the window for which theme data is required.</param>
+            <param name="pszClassList">Pointer to a string that contains a semicolon-separated list of classes.</param>
+            <returns><see cref="M:QSS.Components.Windows.Forms.NativeMethods.OpenThemeData(System.Runtime.InteropServices.HandleRef,System.String)"/> tries to match each class,
+            one at a time, to a class data section in the active theme. If a match is found, an associated handle is returned. If no match is found,
+            null is returned.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.CloseThemeData(System.Runtime.InteropServices.HandleRef)">
+            <summary>
+            Closes the theme data handle.
+            </summary>
+            <param name="hTheme">Handle to a window's specified theme data.</param>
+            <remarks>The CloseThemeData function should be called when a window that has a visual style applied is destroyed.</remarks> 
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.DrawThemeBackground(System.Runtime.InteropServices.HandleRef,System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,QSS.Components.Windows.Forms.RECT@,QSS.Components.Windows.Forms.RECT@)">
+            <summary>
+            Draws the background image defined by the visual style for the specified control part.
+            </summary>
+            <param name="hTheme">Handle to a window's specified theme data.</param>
+            <param name="hdc">Handle to a device context (HDC) used for drawing the theme-defined background image.</param>
+            <param name="iPartId">Value of type <see cref="T:System.Int32"/> that specifies the part to draw.</param>
+            <param name="iStateId">Value of type int that specifies the state of the part to draw.</param>
+            <param name="pRect">A <see cref="T:QSS.Components.Windows.Forms.RECT"/> structure that contains the rectangle, in logical
+            coordinates, in which the background image is drawn.</param>
+            <param name="pClipRect">A <see cref="T:QSS.Components.Windows.Forms.RECT"/> structure that contains a clipping rectangle.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.DrawThemeBackground(System.Runtime.InteropServices.HandleRef,System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.Drawing.Rectangle@,System.Drawing.Rectangle@)">
+            <summary>
+            Draws the part of a parent control that is covered by a partially-transparent or alpha-blended child control.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NativeMethods.DrawThemeText(System.Runtime.InteropServices.HandleRef,System.Runtime.InteropServices.HandleRef,System.Int32,System.Int32,System.String,System.Int32,System.Int32,System.Int32,QSS.Components.Windows.Forms.RECT@)">
+            <summary>
+            Draws text using the color and font defined by the visual style.
+            </summary>
+            <param name="hTheme">Handle to a window's specified theme data.</param>
+            <param name="hdc">Handle to a device context (HDC) to use for drawing.</param>
+            <param name="iPartId">Value of type int that specifies the part that contains the text.</param>
+            <param name="iStateId">Value of type int that specifies the state of the part.</param>
+            <param name="pszText">Pointer to a string that contains the text to draw.</param>
+            <param name="iCharCount">Value of type int that contains the number of characters to draw. If the parameter is set to -1,
+            all the characters in the string are drawn.</param>
+            <param name="dwTextFlag">One or more values that specify the string's formatting.</param>
+            <param name="dwTextFlags2">0x1 to draw a grayed-out string, otherwise 0x0.</param>
+            <param name="rect">Pointer to a <see cref="T:QSS.Components.Windows.Forms.RECT"/> structure that contains the rectangle,
+            in logical coordinates, in which the text is to be drawn.</param>
+            <returns>S_OK if successful, or an error value otherwise.</returns>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.CredentialsPromptDialog">
+            <summary>
+            Represents the standard Windows dialog which prompts the user for credentials.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.CredentialsPromptDialog.ShowDialog">
+            <summary>Shows the credentials dialog.</summary>
+            <returns>Returns a DialogResult indicating the user action.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.CredentialsPromptDialog.Confirm(System.Boolean)">
+            <summary>Confirmation action to be applied.</summary>
+            <param name="value">True if the credentials should be persisted.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.CredentialsPromptDialog.ShowDialog(System.Windows.Forms.IWin32Window)">
+            <summary>Returns a DialogResult indicating the user action.</summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the dialog will display in front of.</param>
+            <remarks>
+            Sets the name, password and SaveCredentials accessors to the state of the dialog as it was dismissed by the user.
+            </remarks>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.CredentialsPromptDialog.GetInfo(System.Windows.Forms.IWin32Window)">
+            <summary>Returns the info structure for dialog display settings.</summary>
+            <param name="owner">The System.Windows.Forms.IWin32Window the dialog will display in front of.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.CredentialsPromptDialog.GetFlags">
+            <summary>Returns the flags for dialog display options.</summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.CredentialsPromptDialog.GetDialogResult(QSS.Components.Windows.Forms.CREDUI_RETURN_CODES)">
+            <summary>Returns a DialogResult from the specified returnCode.</summary>
+            <param name="returnCode">The credential return code.</param>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.IsSupported">
+            <summary>
+            Gets a value indicating whether this dialog is supported on the current operating system.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.AlwaysDisplay">
+            <summary>
+            Gets or sets a value indicating whether the dialog will be shown even if the credentials can be retrieved from the credential manager.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.ExcludeCertificates">
+            <summary>
+            Gets or sets a value indicating whether the dialog is populated with the username and password only.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.SaveInCredentialManager">
+            <summary>
+            Gets or sets if the credentials are to be persisted in the credential manager.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.UserNameReadOnly">
+            <summary>
+            Gets or sets if the name is read-only.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.UserName">
+            <summary>
+            Gets or sets the username displayed in the dialog.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.Password">
+            <summary>
+            Gets or sets the password for the credentials.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.Domain">
+            <summary>
+            Gets the domain portion of the username entered.
+            </summary>
+            <remarks>
+            To set the domain before showing the dialog, set the username in the format DOMAIN\Username.
+            </remarks>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.SaveCredentials">
+            <summary>
+            Gets or sets if the save checkbox status.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.ShowSaveCheckBox">
+            <summary>
+            Gets or sets if the save checkbox is displayed.
+            </summary>
+            <remarks>
+            This value only has an effect if <see cref="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.SaveInCredentialManager"/> is true.
+            </remarks>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.Target">
+            <summary>
+            Gets or sets the name of the server requesting the credentials.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.Title">
+            <summary>
+            Gets or sets the title of the dialog.
+            </summary>
+            <remarks>A value of <c langword="null" /> will cause the system default title to be used.</remarks>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.Message">
+            <summary>
+            Gets or sets the message which is displayed above the username.
+            </summary>
+            <remarks>A value of <c langword="null" /> will cause the system default message to be used.</remarks>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.CredentialsPromptDialog.Banner">
+            <summary>
+            Gets or sets the image to display on the dialog.
+            </summary>
+            <remarks>A value of <c langword="null" /> will cause the system default image to be used.</remarks>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ThemeHelpers">
+            <summary>
+            Provides methods which assist working with Windows XP themes.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ThemeHelpers.IsCompatibleOS">
+            <summary>
+            Returns a value indicating whether the current operating system is compatible with themes.
+            </summary>
+            <returns>A value indicating whether the current operating system is compatible with themes.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ThemeHelpers.IsApplicationThemed">
+            <summary>
+            Returns a value indicating whether the current application is themed.
+            </summary>
+            <returns>A value indicating whether the current application is themed.</returns>
+            <exception cref="T:System.PlatformNotSupportedException">The operating system is older than Windows XP.</exception>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ThemeHelpers.IsAppUsingComCtrl6">
+            <summary>
+            Returns a value indicating whether the current application is using version 6 of comctl32.dll.
+            </summary>
+            <returns>A value indicating whether the current application is using version 6 of comctl32.dll.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ThemeHelpers.IsSystemThemed">
+            <summary>
+            Returns a value indicating whether the system is themed.
+            </summary>
+            <returns>A value indicating whether the system is themed.</returns>
+            <exception cref="T:System.PlatformNotSupportedException">The operating system is older than Windows XP.</exception>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.NumberBox">
+            <summary>
+            Represents a Windows text box control which only allows the entry of numeric characters.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NumberBox.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NumberBox.lengthExceeded">
+            <summary>
+            Stores a value indicating whether a message should be displayed indicating that the entered character is valid,
+            but it is too large for the selected data type.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.NumberBox.overflowExceptionOccurred">
+            <summary>
+            Stores a value indicating whether an overflow exception occurred when trying to validate the value.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.NumberBox"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.InitializeComponent">
+            <summary>
+            Required for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.OnKeyPress(System.Windows.Forms.KeyPressEventArgs)">
+            <summary>
+            Handles the OnKeyPress event, preventing non-numeric characters from being entered.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.GetSignificantFigureCount(System.String)">
+            <summary>
+            Returns the number of significant figures in the specified string.
+            </summary>
+            <param name="text">The text to count significant figures in.</param>
+            <returns>The number of significant figures in the specified string.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.GetValueInsignificantZerosTrimmed(System.Decimal)">
+            <summary>
+            Removes insignificant zeros from the specified decimal.
+            </summary>
+            <param name="value">The decimal to remove insignificant zeros from.</param>
+            <returns>The original decimal with insignificant zeros removed.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.GetNumeralCount(System.String)">
+            <summary>
+            Returns the number of numerals in the specified string.
+            </summary>
+            <param name="text">The text to count numerals in.</param>
+            <returns>The number of numerals in the specified string.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.GetUnselectedText">
+            <summary>
+            Returns the text which is not selected.
+            </summary>
+            <returns>The text which is not selected.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.IsValid(System.Char)">
+            <summary>
+            Returns a value indicating whether the specified character is valid.
+            </summary>
+            <param name="keyChar">The character to validate.</param>
+            <returns>A value indicating whether the specified character is valid.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.IsValid(System.String)">
+            <summary>
+            Gets a value indicating whether the string is a valid value.
+            </summary>
+            <param name="text">The string to validate.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.OnLeave(System.EventArgs)">
+            <summary>
+            Handles the OnLeave event, ensuring that the textbox is filled with the required
+            number of decimals if left blank, or rounded to the specified number of decimals.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.ProcessCmdKey(System.Windows.Forms.Message@,System.Windows.Forms.Keys)">
+            <summary>
+            Handles the ProcessCmdKey event, preventing users from pasting invalid data.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.EnableDisableMenuItems">
+            <summary>
+            Enables or disables menu items depending on whether a selection is present and whether the clipboard contains valid data.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.OnTextChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:System.Windows.Forms.Control.TextChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.NumberBox.OnValueChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.NumberBox.ValueChanged"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.NumberBox.ValueChanged">
+            <summary>
+            Occurs when the <see cref="P:QSS.Components.Windows.Forms.NumberBox.Value"/> value changes.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.IsEmpty">
+            <summary>
+            Gets a value indicating whether the value is empty.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.Format">
+            <summary>
+            Gets or sets a string specifying the formatting to use.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.FormatProvider">
+            <summary>
+            Gets or sets the format provider to use.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.AllowEmpty">
+            <summary>
+            Gets or sets a value indicating whether to allow the value to be empty.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.AllowNegativeSign">
+            <summary>
+            Gets or sets a value indicating whether to allow the current region's negative sign to be entered.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.AllowDecimalSeparator">
+            <summary>
+            Gets or sets a value indicating whether to allow the current region's decimal separator to be entered.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.AllowGroupSeparator">
+            <summary>
+            Gets or sets a value indicating whether to allow the current region's group separator to be entered.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.AllowCurrencySymbol">
+            <summary>
+            Gets or sets a value indicating whether to allow the current region's currency symbol to be entered.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.Minimum">
+            <summary>
+            Gets or sets the minimum allowed value.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.Maximum">
+            <summary>
+            Gets or sets the maximum allowed value.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.MaxLength">
+            <summary>
+            Gets the maximum number of characters the user can type into the number box control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.MaxSignificantFigures">
+            <summary>
+            Gest or sets the maximum number of significant figures that the user can type in the number box control. A value of -1 indicates that there
+            is no limit on the number of significant figures.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.Text">
+            <summary>
+            Gets or sets the text associated with this control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.Value">
+            <summary>
+            Gets or sets the value displayed in the number box.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.NullableValue">
+            <summary>
+            Gets or sets the value displayed in the number box.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.NumberBox.TrimInsignificantZeros">
+            <summary>
+            Gets or sets a value indicating whether to remove trailing zeros after the decimal separator.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ListViewItemComparer">
+            <summary>
+            Exposes a method that compares two <see cref="T:System.Windows.Forms.ListViewItem"/> objects.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ListViewItemComparer.#ctor(QSS.Components.Windows.Forms.ExtendedColumnHeader,System.Windows.Forms.SortOrder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ListViewItemComparer"/> class.
+            </summary>
+            <param name="column">The column to sort by.</param>
+            <param name="sortOrder">The direction to sort in.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ListViewItemComparer.Compare(System.Object,System.Object)">
+            <summary>
+            Compares to objects and returns a value indicating whether one is less than, equal to or greater than the other.
+            </summary>
+            <param name="x">First object to compare.</param>
+            <param name="y">Second object to compare.</param>
+            <returns>A value indicating whether one object is less than, equal to or greater than the other.</returns>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.RowBindingEventArgs">
+            <summary>
+            Summary description for RowBindingEventArgs.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.RowBindingEventArgs.Value">
+            <summary>
+            Gets or sets the bound value.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.RowBindingEventArgs.DataMember">
+            <summary>
+            Gets or sets the name of the property to bind to.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.DataBindingHelpers">
+            <summary>
+            Provides methods to assist with data binding operations.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.WarningProvider">
+            <summary>
+            Provides a user interface for indicating that a control on a form has a warning associated with it.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.WarningProvider.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.WarningProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.WarningProvider.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.WarningProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.WarningProvider.#ctor(System.Windows.Forms.ContainerControl)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.WarningProvider"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.WarningProvider.UpdateBinding">
+            <summary>
+            Updates the bindings of the <see cref="P:QSS.Components.Windows.Forms.WarningProvider.DataSource"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.WarningProvider.DataSource">
+            <summary>
+            Gets or sets the data source that the <see cref="T:QSS.Components.Windows.Forms.WarningProvider"/> monitors.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.WarningProvider.Icon">
+            <summary>
+            Gets or sets the <see cref="P:QSS.Components.Windows.Forms.WarningProvider.Icon"/> that is displayed next to a control when a warning description string has been set for the control.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.TipLabelImageType">
+            <summary>
+            Specifies constants indicating the type of image to display in a <see cref="T:QSS.Components.Windows.Forms.TipLabel"/> control.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.TipLabelImageType.Information">
+            <summary>
+            A Windows information image.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.TipLabelImageType.Warning">
+            <summary>
+            A Windows warning image.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.TipLabelImageType.Error">
+            <summary>
+            A Windows error image.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.TipLabelImageType.Custom">
+            <summary>
+            A custom image.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.BalloonToolTip">
+            <summary>
+            Displays text with a cartoon-style balloon with a stem pointing to the tool.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Windows.Forms.BalloonToolTip.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.OnTitleChanged(System.EventArgs)">
+            <summary>
+            Occurs when the value of the <see cref="P:QSS.Components.Windows.Forms.BalloonToolTipBase.Title"/> property changes.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.OnIconChanged(System.EventArgs)">
+            <summary>
+            Occurs when the value of the <see cref="T:System.Drawing.Icon"/> property changes.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.BalloonToolTip"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.#ctor(System.ComponentModel.IContainer)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.BalloonToolTip"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.GetToolTip(System.Windows.Forms.Control)">
+            <summary>
+            Retrieves the ToolTip text associated with the specified control.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.Control"/> for which to retreieve the
+            <see cref="T:QSS.Components.Windows.Forms.BalloonToolTip"/> text.</param>
+            <returns>The ToolTip text for the specified control.</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.SetToolTip(System.Windows.Forms.Control,System.String)">
+            <summary>
+            Associates the specified balloon tooltip text with the specified control and gives the control input focus.
+            </summary>
+            <param name="control">The <see cref="T:System.Windows.Forms.TextBox"/> to associate tooltip text with.</param>
+            <param name="caption">The tooltip text to display.</param>
+            <exception cref="T:System.ArgumentNullException">The control is null.</exception>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.GetTOOLINFO(System.Windows.Forms.Control,System.String)">
+            <summary>
+            Creates and initializes a <see cref="T:QSS.Components.Windows.Forms.TOOLINFO"/> structure with given set of flags.
+            </summary>
+            <param name="control">Control reference</param>
+            <param name="text">Tooltip to display for the control.</param>
+            <returns>A filled in <see cref="T:QSS.Components.Windows.Forms.TOOLINFO"/> structure</returns>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.SetTrackActive(System.Windows.Forms.Control)">
+            <summary>
+            Activates or deactivates active tracking for the tooltip.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.RemoveAll">
+            <summary>
+            Removes all tool tips associated with controls.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.BalloonToolTip.CanExtend(System.Object)">
+            <summary>
+            Specifies whether this object can provide its extender properties to the specified object.
+            </summary>
+            <param name="extendee">The <see>System.Object</see> to receive the extender properties.</param>
+            <returns><see langword="true"/> if this object can provide extender properties to the specified object; otherwise,
+            <see langword="false"/>.</returns>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTip.Alignment">
+            <summary>
+            Gets or sets the alignment of the balloon relative to the parent control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTip.Absolute">
+            <summary>
+            Gets or sets a value indicating whether absolute positioning should be used.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTip.UseExactPositioning">
+            <summary>
+            Gets or sets a value indicating whether exact positioning as specified by the <see cref="P:QSS.Components.Windows.Forms.BalloonToolTip.BalloonPosition"/> property should be used.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTip.BalloonPosition">
+            <summary>
+            Gets or sets the exact position of the balloon tooltip, if <see cref="P:QSS.Components.Windows.Forms.BalloonToolTip.UseExactPositioning"/> is <c langword="true"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTip.Active">
+            <summary>
+            Gets or sets a value indicating whether the ToolTip is currently active.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTip.ShowAlways">
+            <summary>
+            Gets or sets a value indicating whether tooltips should always be displayed, even if the mouse is not over the control.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.BalloonToolTip.Handle">
+            <summary>
+            Gets the window handle that the control is bound to.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Windows.Forms.ExtendedLinkLabel">
+            <summary>
+            Represents a link label which renders correctly with ClearType using GDI fonts.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Windows.Forms.ExtendedLinkLabel"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.ShouldSerializeFont">
+            <summary>
+            This member supports the Visual Studio Designer infrastructure and is not intended to be used directly from user code.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.ResetFont">
+            <summary>
+            This member supports the Visual Studio Designer infrastructure and is not intended to be used directly from user code.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.OnLinkClicked(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:QSS.Components.Windows.Forms.ExtendedLinkLabel.LinkClicked"/> event.
+            </summary>
+            <param name="e">An <see cref="T:System.EventArgs"/> which contains the event data.</param>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.OnEnabledChanged(System.EventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Label.OnEnabledChanged(System.EventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnKeyDown(System.Windows.Forms.KeyEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnMouseDown(System.Windows.Forms.MouseEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnMouseMove(System.Windows.Forms.MouseEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Windows.Forms.ExtendedLinkLabel.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            This member overrides <see cref="M:System.Windows.Forms.Control.OnMouseUp(System.Windows.Forms.MouseEventArgs)"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedLinkLabel.ForeColor">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Control.ForeColor"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedLinkLabel.FlatStyle">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Label.FlatStyle"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedLinkLabel.Font">
+            <summary>
+            This member overrides <see cref="P:System.Windows.Forms.Control.Font"/>.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedLinkLabel.ActiveLinkColor">
+            <summary>
+            Gets or sets the color of the link when it has focus.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedLinkLabel.LinkColor">
+            <summary>
+            Gets or sets the normal color of the link.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedLinkLabel.VisitedLinkColor">
+            <summary>
+            Gets or sets the color of the link after it has been visited.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Windows.Forms.ExtendedLinkLabel.DisabledLinkColor">
+            <summary>
+            Gets or sets the color of the link when it is disabled.
+            </summary>
+        </member>
+        <member name="E:QSS.Components.Windows.Forms.ExtendedLinkLabel.LinkClicked">
+            <summary>
+            Occurs when the user clicks the link.
+            </summary>
+        </member>
+    </members>
+</doc>

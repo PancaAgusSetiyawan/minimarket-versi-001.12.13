@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_Pb_Harian" targetNamespace="http://tempuri.org/Ds_Pb_Harian.xsd" xmlns:mstns="http://tempuri.org/Ds_Pb_Harian.xsd" xmlns="http://tempuri.org/Ds_Pb_Harian.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_Pb_Harian" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Ds_Pb_Harian" msprop:Generator_UserDSName="Ds_Pb_Harian" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Ds_Pb_Harian" msprop:Generator_UserTableName="Ds_Pb_Harian" msprop:Generator_RowDeletedName="Ds_Pb_HarianRowDeleted" msprop:Generator_TableClassName="Ds_Pb_HarianDataTable" msprop:Generator_RowChangedName="Ds_Pb_HarianRowChanged" msprop:Generator_RowClassName="Ds_Pb_HarianRow" msprop:Generator_RowChangingName="Ds_Pb_HarianRowChanging" msprop:Generator_RowEvArgName="Ds_Pb_HarianRowChangeEvent" msprop:Generator_RowEvHandlerName="Ds_Pb_HarianRowChangeEventHandler" msprop:Generator_TablePropName="_Ds_Pb_Harian" msprop:Generator_TableVarName="tableDs_Pb_Harian" msprop:Generator_RowDeletingName="Ds_Pb_HarianRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="tgl_beli" msprop:Generator_UserColumnName="tgl_beli" msprop:Generator_ColumnPropNameInRow="tgl_beli" msprop:Generator_ColumnVarNameInTable="columntgl_beli" msprop:Generator_ColumnPropNameInTable="tgl_beliColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="User_id" msprop:Generator_UserColumnName="User_id" msprop:Generator_ColumnPropNameInRow="User_id" msprop:Generator_ColumnVarNameInTable="columnUser_id" msprop:Generator_ColumnPropNameInTable="User_idColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="sub_total" msprop:Generator_UserColumnName="sub_total" msprop:Generator_ColumnPropNameInRow="sub_total" msprop:Generator_ColumnVarNameInTable="columnsub_total" msprop:Generator_ColumnPropNameInTable="sub_totalColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

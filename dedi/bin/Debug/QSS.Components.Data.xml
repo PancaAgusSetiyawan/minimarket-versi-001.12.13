@@ -1,0 +1,727 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>QSS.Components.Data</name>
+    </assembly>
+    <members>
+        <member name="T:QSS.Components.Data.ConnectionStringParser">
+            <summary>
+            Reades data from connection strings.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.ConnectionStringParser.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.ConnectionStringParser"/> class.
+            </summary>
+            <param name="connectionString">The connection string.</param>
+        </member>
+        <member name="M:QSS.Components.Data.ConnectionStringParser.GetPropertyValue(System.String)">
+            <summary>
+            Returns the value of the specified property or <see langword="null"/> if the property does not exist.
+            </summary>
+            <param name="propertyName">The name of the property to retrieve the value of.</param>
+            <returns>The value of the specified property <see langword="null"/> if the property does not exist.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.ConnectionStringParser.Provider">
+            <summary>
+            Gets the value of the Provider property of the connection string.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.ConnectionStringParser.DataSource">
+            <summary>
+            Gets the value of the Data Source (Server) property of the connection string.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.ConnectionStringParser.UserID">
+            <summary>
+            Gets the value of the User ID (UID) property of the connection string.s
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.ConnectionStringParser.Password">
+            <summary>
+            Gets the value of the Password (Pwd) property of the connection string.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.ConnectionStringParser.Sspi">
+            <summary>
+            Gets the value of the Integrated Security (Trusted Connection) property of the connection string.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.ConnectionStringParser.InitialCatalog">
+            <summary>
+            Gets the value of the Initial Catalog (Database) property of the connection string.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.DataHelpers">
+            <summary>
+            Provides data helper methods.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.DataHelpers.GetOleDbConnectionString(System.String,System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Returns a connection string to connect to an OLE DB data source.
+            </summary>
+            <param name="provider">The OLE DB provider to use.</param>
+            <param name="dataSource">The data source to connect to.</param>
+            <param name="database">The name of the database, if any.</param>
+            <param name="userID">The user ID to authenticate with.</param>
+            <param name="password">The password to authenticate with.</param>
+            <param name="useIntegratedSecurity">Indicates whether to use Windows NT Integrated security.</param>
+            <returns>A connection string to connect to an OLE DB data source.</returns>
+        </member>
+        <member name="M:QSS.Components.Data.DataHelpers.GetSqlClientConnectionString(System.String,System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Returns a connection string to connect to a SQL server using the ADO.NET SQL Server provider.
+            </summary>
+            <param name="dataSource">The name of the SQL Server.</param>
+            <param name="database">The database to connect to (if any).</param>
+            <param name="userID">The user ID to authenticate with.</param>
+            <param name="password">The password to authenticate with.</param>
+            <param name="useIntegratedSecurity">Indicates whether to use Windows NT Integrated security.</param>
+            <returns>A connection string to connect to a SQL Server using the ADO.NET SQL Server provider.</returns>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.ColumnDeclarationExpression">
+            <summary>
+            Represents a column declaration expression.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.ColumnDeclarationExpression.#ctor(System.String,System.Data.SqlDbType,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.ColumnDeclarationExpression"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.ColumnDeclarationExpression.GetKeyword(System.Data.SqlDbType)">
+            <summary>
+            Returns the T-SQL keyword for the specified <see cref="T:System.Data.SqlDbType"/>.
+            </summary>
+            <param name="sqlDbType">The <see cref="T:System.Data.SqlDbType"/>.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.ColumnDeclarationExpression.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.CommentStatement">
+            <summary>
+            Represents a comment in a T-SQL query.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.IStatement">
+            <summary>
+            Represents a single statement in a T-SQL query.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.IStatement.Code">
+            <summary>
+            Gets the T-SQL code for the statement.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.CommentStatement.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.CommentStatement"/> class.
+            </summary>
+            <param name="comment">The text of the comment.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.CommentStatement.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.CommentStatement.Code">
+            <summary>
+            Gets the T-SQL code for the statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.DeleteQueryBuilder">
+            <summary>
+            Builds a SQL DELETE statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.IQueryBuilder">
+            <summary>
+            Represents a mechanism for building SQL queries.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.IQueryBuilder.Tables">
+            <summary>
+            The tables to retrieve data from.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.IQueryBuilder.WhereConditions">
+            <summary>
+            The WHERE conditions.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.DeleteQueryBuilder.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.DeleteQueryBuilder.WhereConditions">
+            <summary>
+            The WHERE conditions.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.DeleteQueryBuilder.Tables">
+            <summary>
+            The tables to retrieve data from.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.DeleteQueryBuilder.Code">
+            <summary>
+            Gets the T-SQL code for the statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.GenericExpression">
+            <summary>
+            Represents a generic expression in a T-SQL query.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.IExpression">
+            <summary>
+            Represents an expression in a T-SQL query.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.IExpression.Alias">
+            <summary>
+            Gets the alias to give to the expression.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.GenericExpression.#ctor(System.String,System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.GenericExpression"/> class.
+            </summary>
+            <param name="expression">The <see cref="T:System.String"/> containing the T-SQL expression.</param>
+            <param name="encloseQuotes">A value indicating whether the expression should be enclosed in quotes and escaped.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.GenericExpression.#ctor(System.String,System.Boolean,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.GenericExpression"/> class.
+            </summary>
+            <param name="expression">The <see cref="T:System.String"/> containing the T-SQL expression.</param>
+            <param name="encloseQuotes">A value indicating whether the expression should be enclosed in quotes and escaped.</param>
+            <param name=" alias">The alias to give to the expression.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.GenericExpression.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A  <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.GenericExpression.NullKeyword">
+            <summary>
+            Gets an expression which represents the null keyword.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.GenericExpression.Alias">
+            <summary>
+            Gets the alias to give to the expression.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.InjectionPrevention">
+            <summary>
+            Provides functionality for preventing SQL injection attacks.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.InjectionPrevention.EscapeString(System.String)">
+            <summary>
+            Escapes quotes in the specified string to prevent SQL injection attacks.
+            </summary>
+            <param name="value">The value to escape.</param>
+            <returns>The original string with quotes escaped.</returns>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.InsertQueryBuilder">
+            <summary>
+            Builds an INSERT statement in T-SQL.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.InsertQueryBuilder.#ctor(System.String,QSS.Components.Data.Queries.SelectQueryBuilder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.InsertQueryBuilder"/> class.
+            </summary>
+            <param name="tableName">The name of the table to insert data into.</param>
+            <param name="selectQuery">The SELECT query containing the data to insert into <paramref name="tableName"/>.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.InsertQueryBuilder.#ctor(System.String,QSS.Components.Data.Queries.UnionQuery)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.InsertQueryBuilder"/> class.
+            </summary>
+            <param name="tableName">The name of the table to insert data into.</param>
+            <param name="unionQuery">The UNION query containing the data to insert into <paramref name="tableName"/>.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.InsertQueryBuilder.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.InsertQueryBuilder.Code">
+            <summary>
+            Gets a <see cref="T:System.String"/> representation of the statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.IStatementCollection">
+            <summary>
+            Represents a collection of <see cref="T:QSS.Components.Data.Queries.IStatement"/> objects.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.IStatementCollection.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.QueryCondition">
+            <summary>
+            Represents a query condition.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.QueryCondition.#ctor(QSS.Components.Data.Queries.IExpression,QSS.Components.Data.Queries.IExpression,QSS.Components.Data.Queries.IExpression)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.QueryCondition"/> class.
+            </summary>
+            <param name="expression">The first expression.</param>
+            <param name="betweenExpression1">The first expression in the BETWEEN expression.</param>
+            <param name="betweenExpression2">The second expression in the BETWEEN expression.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.QueryCondition.#ctor(QSS.Components.Data.Queries.IExpression,QSS.Components.Data.Queries.QueryOperator,QSS.Components.Data.Queries.IExpression)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.QueryCondition"/> class.
+            </summary>
+            <param name="expression1">The first expression.</param>
+            <param name="queryOperator">The operator to use for comparison.</param>
+            <param name="expression2">The second expression in the condition.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.QueryCondition.GetKeyword(QSS.Components.Data.Queries.QueryOperator)">
+            <summary>
+            Returns the T-SQL keyword represented by the specified <see cref="T:QSS.Components.Data.Queries.QueryOperator"/>.
+            </summary>
+            <param name="queryOperator">The <see cref="T:QSS.Components.Data.Queries.QueryOperator"/>.</param>
+            <returns>The T-SQL keyword represented by the specified <see cref="T:QSS.Components.Data.Queries.QueryOperator"/>.</returns>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.QueryCondition.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.QueryCondition.Expression1">
+            <summary>
+            Gets the first expression in the condition.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.QueryCondition.QueryOperator">
+            <summary>
+            Gets the operator to use for the join.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.QueryCondition.Expression2">
+            <summary>
+            Gets the second expression in the condition.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.QueryJoin">
+            <summary>
+            Represents a SQL JOIN.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.QueryJoin.#ctor(QSS.Components.Data.Queries.QueryJoinType,QSS.Components.Data.Queries.GenericExpression,System.Collections.Generic.List{QSS.Components.Data.Queries.QueryCondition})">
+            <summary>
+            Initializes a new instance of the QSS.Components.QueryJoin class.
+            </summary>
+            <param name="type">The type of join to make.</param>
+            <param name="table">The table to join.</param>
+            <param name="conditions">The conditions	 on which to make the join.</param>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.QueryJoin.Type">
+            <summary>
+            The type of join.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.QueryJoin.Table">
+            <summary>
+            The table to join.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.QueryJoin.Conditions">
+            <summary>
+            The condition to perform the join.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.QueryJoinType">
+            <summary>
+            The type of SQL Join.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.Left">
+            <summary>
+            A LEFT JOIN.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.Right">
+            <summary>
+            A RIGHT JOIN.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.Full">
+            <summary>
+            A FULL JOIN.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.Inner">
+            <summary>
+            An INNER JOIN.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.Outer">
+            <summary>
+            An OUTER JOIN.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.LeftOuter">
+            <summary>
+            A LEFT OUTER JOIN.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.RightOuter">
+            <summary>
+            A RIGHT OUTER JOIN.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryJoinType.FullOuter">
+            <summary>
+            A FULL OUTER JOIN.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.QueryOperator">
+            <summary>
+            A type of query operator.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.EqualTo">
+            <summary>
+            Equal to (=).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.NotEqualTo">
+            <summary>
+            Not equal to (&lt;&gt;).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.LessThan">
+            <summary>
+            Less than (&lt;).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.GreaterThan">
+            <summary>
+            Greater than (&gt;).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.LessThanOrEqualTo">
+            <summary>
+            Less than or equal to (&lt;=).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.GreaterThanOrEqualTo">
+            <summary>
+            Greater than or equal to (&gt;=).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.Like">
+            <summary>
+            Like (LIKE).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.In">
+            <summary>
+            In (IN).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.NotIn">
+            <summary>
+            Not in (NOT IN).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.Is">
+            <summary>
+            Is (IS).
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QueryOperator.IsNot">
+            <summary>
+            Is not (IS NOT).
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.QuerySortDirection">
+            <summary>
+            The direction to sort by.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QuerySortDirection.Ascending">
+            <summary>
+            Sort ascending.
+            </summary>
+        </member>
+        <member name="F:QSS.Components.Data.Queries.QuerySortDirection.Descending">
+            <summary>
+            Sort descending.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.SelectQueryBuilder">
+            <summary>
+            Builds a SELECT statement in T-SQL.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SelectQueryBuilder.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SelectQueryBuilder.GetJoinKeyword(QSS.Components.Data.Queries.QueryJoinType)">
+            <summary>
+            Gets the keyword for the specified <see cref="T:QSS.Components.Data.Queries.QueryJoinType"/>.
+            </summary>
+            <param name="queryJoinType">The <see cref="T:QSS.Components.Data.Queries.QueryJoinType"/>.</param>
+            <returns>The keyword for the specified <see cref="T:QSS.Components.Data.Queries.QueryJoinType"/>.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.Distinct">
+            <summary>
+            Gets or sets a value indicating whether to use a DISTINCT clause.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.Columns">
+            <summary>
+            The columns to retrieve from the tables.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.Joins">
+            <summary>
+            The joins to make in the query.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.OrderBy">
+            <summary>
+            The fields to sort by.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.SortDirection">
+            <summary>
+            The sort direction.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.WhereConditions">
+            <summary>
+            The WHERE conditions.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.Tables">
+            <summary>
+            The tables to retrieve data from.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SelectQueryBuilder.Code">
+            <summary>
+            Gets the T-SQL code for the statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.SetNoCountStatement">
+            <summary>
+            Builds a SET NOCOUNT statement in T-SQL.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SetNoCountStatement.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.SetNoCountStatement"/> class.
+            </summary>
+            <param name="noCountOn">A value indicating whether row counting should be disabled.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SetNoCountStatement.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SetNoCountStatement.Code">
+            <summary>
+            Gets the T-SQL code for the statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.SetRowCountStatement">
+            <summary>
+            Builds a SET ROWCOUNT statement in T-SQL.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SetRowCountStatement.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.SetRowCountStatement"/> class.
+            </summary>
+            <param name="rowCount">The number of rows to limit results to.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SetRowCountStatement.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SetRowCountStatement.Code">
+            <summary>
+            Gets the T-SQL code for the statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.SubQueryExpression">
+            <summary>
+            Represents a subquery in a T-SQL query.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SubQueryExpression.#ctor(QSS.Components.Data.Queries.SelectQueryBuilder)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.SubQueryExpression"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SubQueryExpression.#ctor(QSS.Components.Data.Queries.SelectQueryBuilder,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.SubQueryExpression"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.SubQueryExpression.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.SubQueryExpression.Alias">
+            <summary>
+            Gets the alias to give to the expression.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.TemporaryTableDeclarationStatement">
+            <summary>
+            Represents a temporary table declaration.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.TemporaryTableDeclarationStatement.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.Queries.TemporaryTableDeclarationStatement"/> class.
+            </summary>
+            <param name="tableName">The name of the table.</param>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.TemporaryTableDeclarationStatement.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.TemporaryTableDeclarationStatement.Columns">
+            <summary>
+            Gets the columns in the table.
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.TemporaryTableDeclarationStatement.Code">
+            <summary>
+            Gets the T-SQL code for the statement.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.Queries.UnionQuery">
+            <summary>
+            Constructs a new SQL UNION query.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.Queries.UnionQuery.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> representing this instance.
+            </summary>
+            <returns>A <see cref="T:System.String"/> representing this instance.</returns>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.UnionQuery.SelectQueries">
+            <summary>
+            Gets the SELECT queries contained within this UNION query. 
+            </summary>
+        </member>
+        <member name="P:QSS.Components.Data.Queries.UnionQuery.Code">
+            <summary>
+            Gets the T-SQL code for this query.
+            </summary>
+        </member>
+        <member name="T:QSS.Components.Data.SortExpression">
+            <summary>
+            Represents an expression used to sort a <see cref="T:System.Data.DataView"/>.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.SortExpression.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.SortExpression"/> class.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.SortExpression.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.SortExpression"/> class.
+            </summary>
+            <param name="column">The name of the column to sort on.</param>
+        </member>
+        <member name="M:QSS.Components.Data.SortExpression.#ctor(System.String,System.ComponentModel.ListSortDirection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:QSS.Components.Data.SortExpression"/> class.
+            </summary>
+            <param name="column">The name of the column to sort on.</param>
+            <param name="sortDirection">The direction to sort in.</param>
+        </member>
+        <member name="M:QSS.Components.Data.SortExpression.AddColumn(System.String)">
+            <summary>
+            Adds the specified column to the list of columns to sort on.
+            </summary>
+            <param name="column">The name of the column to sort on.</param>
+        </member>
+        <member name="M:QSS.Components.Data.SortExpression.AddColumn(System.String,System.ComponentModel.ListSortDirection)">
+            <summary>
+            /// Adds the specified column to the list of columns to sort on, with the specified sort direction.
+            </summary>
+            <param name="column">The name of the column to sort on.</param>
+            <param name="sortDirection">The direction to sort in.</param>
+        </member>
+        <member name="M:QSS.Components.Data.SortExpression.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> that represents this <see cref="T:QSS.Components.Data.SortExpression"/>.
+            </summary>
+            <returns>A  <see cref="T:System.String"/> that represents this <see cref="T:QSS.Components.Data.SortExpression"/>.</returns>
+        </member>
+        <member name="T:QSS.Components.Data.SqlServerLocator">
+            <summary>
+            Provides methods for locating SQL servers within the current network.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.SqlServerLocator.GetServers">
+            <summary>
+            Returns an array containing the names of the SQL servers on the current network.
+            </summary>
+            <returns>An array containing the names of the SQL servers on the current network.</returns>
+        </member>
+        <member name="T:QSS.Components.Data.StringConcatenationExpression">
+            <summary>
+            Represents an expression which is the concatenation of two or more strings.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.StringConcatenationExpression.Add(System.String,System.Boolean)">
+            <summary>
+            Adds the specified value to the expression.
+            </summary>
+            <param name="value">The value to add.</param>
+            <param name="encloseQuotes">A value indicating whether to enclose the value in quotes.</param>
+        </member>
+        <member name="M:QSS.Components.Data.StringConcatenationExpression.AddSpace">
+            <summary>
+            Adds a space to the expression.
+            </summary>
+        </member>
+        <member name="M:QSS.Components.Data.StringConcatenationExpression.ToString">
+            <summary>
+            Returns a <see cref="T:System.String"/> which represents the expression.
+            </summary>
+            <returns>A <see cref="T:System.String"/> which represents the expression.</returns>
+        </member>
+    </members>
+</doc>

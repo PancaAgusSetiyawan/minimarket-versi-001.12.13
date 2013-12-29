@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Ds_pembelian" targetNamespace="http://tempuri.org/Ds_pembelian.xsd" xmlns:mstns="http://tempuri.org/Ds_pembelian.xsd" xmlns="http://tempuri.org/Ds_pembelian.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Ds_pembelian" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Ds_pembelian" msprop:Generator_UserDSName="Ds_pembelian" msprop:EnableTableAdapterManager="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ds_pembelian" msprop:Generator_UserTableName="ds_pembelian" msprop:Generator_RowDeletedName="ds_pembelianRowDeleted" msprop:Generator_TableClassName="ds_pembelianDataTable" msprop:Generator_RowChangedName="ds_pembelianRowChanged" msprop:Generator_RowClassName="ds_pembelianRow" msprop:Generator_RowChangingName="ds_pembelianRowChanging" msprop:Generator_RowEvArgName="ds_pembelianRowChangeEvent" msprop:Generator_RowEvHandlerName="ds_pembelianRowChangeEventHandler" msprop:Generator_TablePropName="_ds_pembelian" msprop:Generator_TableVarName="tableds_pembelian" msprop:Generator_RowDeletingName="ds_pembelianRowDeleting">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="no_pembelian" msprop:Generator_UserColumnName="no_pembelian" msprop:Generator_ColumnPropNameInRow="no_pembelian" msprop:Generator_ColumnVarNameInTable="columnno_pembelian" msprop:Generator_ColumnPropNameInTable="no_pembelianColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="tgl_beli" msprop:Generator_UserColumnName="tgl_beli" msprop:Generator_ColumnPropNameInRow="tgl_beli" msprop:Generator_ColumnVarNameInTable="columntgl_beli" msprop:Generator_ColumnPropNameInTable="tgl_beliColumn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="kd_suplier" msprop:Generator_UserColumnName="kd_suplier" msprop:Generator_ColumnPropNameInRow="kd_suplier" msprop:Generator_ColumnVarNameInTable="columnkd_suplier" msprop:Generator_ColumnPropNameInTable="kd_suplierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="nm_suplier" msprop:Generator_UserColumnName="nm_suplier" msprop:Generator_ColumnPropNameInRow="nm_suplier" msprop:Generator_ColumnVarNameInTable="columnnm_suplier" msprop:Generator_ColumnPropNameInTable="nm_suplierColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="user_id" msprop:Generator_UserColumnName="user_id" msprop:Generator_ColumnPropNameInRow="user_id" msprop:Generator_ColumnVarNameInTable="columnuser_id" msprop:Generator_ColumnPropNameInTable="user_idColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="kd_brg" msprop:Generator_UserColumnName="kd_brg" msprop:Generator_ColumnPropNameInRow="kd_brg" msprop:Generator_ColumnVarNameInTable="columnkd_brg" msprop:Generator_ColumnPropNameInTable="kd_brgColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="nm_brg" msprop:Generator_UserColumnName="nm_brg" msprop:Generator_ColumnPropNameInRow="nm_brg" msprop:Generator_ColumnVarNameInTable="columnnm_brg" msprop:Generator_ColumnPropNameInTable="nm_brgColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="jumlah" msprop:Generator_UserColumnName="jumlah" msprop:Generator_ColumnPropNameInRow="jumlah" msprop:Generator_ColumnVarNameInTable="columnjumlah" msprop:Generator_ColumnPropNameInTable="jumlahColumn" type="xs:short" minOccurs="0" />
+              <xs:element name="hrg_beli" msprop:Generator_UserColumnName="hrg_beli" msprop:Generator_ColumnPropNameInRow="hrg_beli" msprop:Generator_ColumnVarNameInTable="columnhrg_beli" msprop:Generator_ColumnPropNameInTable="hrg_beliColumn" type="xs:double" minOccurs="0" />
+              <xs:element name="sub_total" msprop:Generator_UserColumnName="sub_total" msprop:Generator_ColumnPropNameInRow="sub_total" msprop:Generator_ColumnVarNameInTable="columnsub_total" msprop:Generator_ColumnPropNameInTable="sub_totalColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
